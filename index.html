@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader - Download Without Watermark</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-tiktok"></i>
+                <h1>TikTok Downloader</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Video Downloader</a></li>
+                    <li><a href="story-downloader.html">Story Downloader</a></li>
+                    <li><a href="slider-downloader.html">Slider Downloader</a></li>
+                    <li><a href="#how-to">How to Use</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animated-heading">Download TikTok Videos <span class="highlight">Without Watermark</span></h1>
+                    <p>Fast, free, and easy to use. No registration required!</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">HD</span>
+                            <span class="stat-label">Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="card-header">
+                        <i class="fab fa-tiktok pulse-icon"></i>
+                        <h3>TikTok Video Downloader</h3>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="video-url" placeholder="Paste TikTok video URL here">
+                        <button class="download-btn" data-type="video">Download</button>
+                    </div>
+                    <div class="result" id="video-result"></div>
+                    <div class="card-footer">
+                        <div class="supported-device">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile</span>
+                        </div>
+                        <div class="supported-device">
+                            <i class="fas fa-desktop"></i>
+                            <span>Desktop</span>
+                        </div>
+                        <div class="supported-device">
+                            <i class="fas fa-tablet-alt"></i>
+                            <span>Tablet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our TikTok Video Downloader</h2>
+                <p>The most reliable tool to download TikTok videos without watermark</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Processing</h3>
+                    <p>Download videos in seconds with our high-speed servers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>No Watermark</h3>
+                    <p>Get clean videos without the TikTok watermark</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices including smartphones</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>We don't store your videos or personal information</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Unlimited Downloads</h3>
+                    <p>No daily limits or restrictions on number of downloads</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>High Quality</h3>
+                    <p>Download videos in the highest available quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to" class="how-to">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Download TikTok Videos</h2>
+                <p>Follow these simple steps to download any TikTok video without watermark</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Copy the URL</h3>
+                        <p>Open TikTok app or website and copy the URL of the video you want to download.</p>
+                        <img src="images/step1.svg" alt="Copy URL" class="step-image">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Paste the URL</h3>
+                        <p>Paste the copied URL into the input field above.</p>
+                        <img src="images/step2.svg" alt="Paste URL" class="step-image">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Download</h3>
+                        <p>Click the download button and save the video to your device.</p>
+                        <img src="images/step3.svg" alt="Download" class="step-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Join thousands of satisfied users who download TikTok videos every day</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"This is the best TikTok downloader I've ever used! So fast and the videos come out perfect without any watermarks."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I use this tool daily for my content creation. It's reliable, fast, and the quality is always perfect!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JS</div>
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <p>Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Finally found a TikTok downloader that actually works every time! No more watermarks on my saved videos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RJ</div>
+                        <div class="author-info">
+                            <h4>Robert Johnson</h4>
+                            <p>Video Editor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to the most common questions about our TikTok downloader</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Is this TikTok video downloader free to use?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, our TikTok video downloader is completely free to use. There are no hidden charges or subscription fees.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Do I need to create an account to download TikTok videos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>No, you don't need to create an account or register to use our TikTok video downloader. Simply paste the URL and download.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Is it legal to download TikTok videos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Downloading TikTok videos for personal use is generally acceptable. However, you should not redistribute or use the content commercially without permission from the creator.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Why is there no watermark on downloaded videos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our tool is designed to download the original video without the TikTok watermark. This gives you a cleaner version of the video.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is the maximum video quality I can download?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our tool downloads TikTok videos in the highest quality available, which is typically up to 1080p resolution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Download TikTok Videos?</h2>
+                <p>Start downloading your favorite TikTok videos without watermark now!</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok Downloader</h3>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Tools</h4>
+                        <a href="index.html">Video Downloader</a>
+                        <a href="story-downloader.html">Story Downloader</a>
+                        <a href="slider-downloader.html">Slider Downloader</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Help</h4>
+                        <a href="#how-to">How to Use</a>
+                        <a href="#faq">FAQs</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 TikTok Downloader. All rights reserved.</p>
+                <p>This service is not affiliated with TikTok.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

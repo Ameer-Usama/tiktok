@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <!-- Website mockup -->
+  <rect x="50" y="20" width="300" height="160" rx="5" ry="5" fill="#fff" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Browser address bar -->
+  <rect x="60" y="30" width="280" height="20" rx="3" ry="3" fill="#f5f5f5" stroke="#ddd"/>
+  <circle cx="70" cy="40" r="3" fill="#ff6b6b"/>
+  <circle cx="80" cy="40" r="3" fill="#ffd93d"/>
+  <circle cx="90" cy="40" r="3" fill="#6bcb77"/>
+  <text x="110" y="43" font-family="Arial" font-size="10" fill="#888">tiktokdownloader.com</text>
+  
+  <!-- Website header -->
+  <rect x="60" y="55" width="280" height="30" fill="#fe2c55" opacity="0.9"/>
+  <text x="75" y="75" font-family="Arial" font-size="12" font-weight="bold" fill="white">TikTok Downloader</text>
+  
+  <!-- Tool card -->
+  <rect x="100" y="95" width="200" height="70" rx="5" ry="5" fill="white" stroke="#eee" stroke-width="1"/>
+  
+  <!-- Tool title -->
+  <text x="200" y="110" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">TikTok Video Downloader</text>
+  
+  <!-- Download result -->
+  <rect x="110" y="120" width="180" height="35" rx="3" ry="3" fill="#f0f8ff" stroke="#ddd"/>
+  <text x="120" y="140" font-family="Arial" font-size="10" fill="#333">Download ready!</text>
+  
+  <!-- Download button -->
+  <rect x="200" y="125" width="80" height="25" rx="3" ry="3" fill="#25f4ee"/>
+  <text x="240" y="142" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Download</text>
+  
+  <!-- Download text -->
+  <text x="200" y="180" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Download</text>
+  
+  <!-- Download animation -->
+  <g>
+    <path d="M200,75 L200,95 M190,85 L200,95 L210,85" stroke="#25f4ee" stroke-width="2" fill="none" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
+  </g>
+  
+  <!-- File icon -->
+  <g transform="translate(200, 50)">
+    <rect x="-10" y="0" width="20" height="25" fill="#f5f5f5" stroke="#ddd"/>
+    <path d="M-10,0 L0,-10 L10,0" fill="#f5f5f5" stroke="#ddd"/>
+    <rect x="-5" y="10" width="10" height="2" fill="#888"/>
+    <rect x="-5" y="15" width="10" height="2" fill="#888"/>
+    
+    <!-- Animation for file download -->
+    <animateTransform attributeName="transform" type="translate" from="200,50" to="200,150" begin="2s" dur="1s" fill="freeze" repeatCount="0" restart="whenNotActive"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </g>
+  
+  <!-- Hand cursor -->
+  <g transform="translate(240, 135) rotate(0)">
+    <path d="M0,0 L10,15 L5,15 L15,25 L10,30 L0,20 L-5,25 L0,0 Z" fill="#333" opacity="0.7"/>
+    
+    <!-- Click animation -->
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" from="1" to="0.9" begin="0s" dur="0.5s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  
+  <!-- Download complete checkmark -->
+  <g opacity="0" transform="translate(240, 140)">
+    <circle r="15" fill="#6bcb77" opacity="0.2"/>
+    <path d="M-5,0 L0,5 L5,-5" stroke="#6bcb77" stroke-width="2" fill="none"/>
+    <animate attributeName="opacity" values="0;0;1" dur="3s" repeatCount="indefinite"/>
+  </g>
+</svg>
