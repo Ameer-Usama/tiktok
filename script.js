@@ -1,257 +1,364 @@
+// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize accordion functionality
-    initAccordion();
-    
-    // Initialize download buttons
-    initDownloadButtons();
-    
-    // Initialize animated counters for statistics
-    initCounters();
-    
-    // Initialize testimonial slider
-    initTestimonialSlider();
-    
-    // Add scroll animations
-    initScrollAnimations();
-    
-    // Initialize mobile menu
-    initMobileMenu();
-});
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-// Accordion functionality
-function initAccordion() {
-    const accordionItems = document.querySelectorAll('.accordion-item');
-    
-    accordionItems.forEach(item => {
-        const header = item.querySelector('.accordion-header');
-        
-        header.addEventListener('click', () => {
-            // Close all other accordion items
-            accordionItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                }
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all FAQ items
+            faqItems.forEach(faqItem => {
+                faqItem.classList.remove('active');
             });
             
-            // Toggle current item
-            item.classList.toggle('active');
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+            }
         });
     });
-}
 
-// Download buttons functionality
-function initDownloadButtons() {
-    const downloadButtons = document.querySelectorAll('.download-btn');
-    
-    downloadButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
+    // Download Button Functionality
+    const downloadBtn = document.getElementById('downloadBtn');
+    const videoUrlInput = document.getElementById('videoUrl');
+    const loading = document.getElementById('loading');
+
+    if (downloadBtn && videoUrlInput && loading) {
+        downloadBtn.addEventListener('click', function() {
+            const url = videoUrlInput.value.trim();
+            
+            if (!url) {
+                showNotification('Please enter a TikTok video URL', 'error');
+                return;
+            }
+
+            if (!isValidTikTokUrl(url)) {
+                showNotification('Please enter a valid TikTok video URL', 'error');
+                return;
+            }
+
+            downloadVideo(url);
+        });
+
+        // Enter key support
+        videoUrlInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                downloadBtn.click();
+            }
+        });
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
-            const inputGroup = this.closest('.input-group');
-            const input = inputGroup.querySelector('input');
-            const resultContainer = inputGroup.nextElementSibling;
-            
-            if (!input.value.trim()) {
-                showError(resultContainer, 'Please enter a valid TikTok URL');
-                return;
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
-            
-            if (!validateTikTokUrl(input.value)) {
-                showError(resultContainer, 'Please enter a valid TikTok URL');
-                return;
-            }
-            
-            // Show loading state
-            showLoading(resultContainer);
-            
-            // Simulate download process (replace with actual API call)
-            setTimeout(() => {
-                showDownloadResult(resultContainer, input.value);
-            }, 2000);
         });
     });
+});
+
+// TikTok URL Validation
+function isValidTikTokUrl(url) {
+    const tiktokRegex = /^https?:\/\/(www\.|vm\.)?tiktok\.com\/.+/i;
+    return tiktokRegex.test(url);
 }
 
-// Validate TikTok URL
-function validateTikTokUrl(url) {
-    // Basic validation - check if URL contains tiktok.com
-    return url.includes('tiktok.com');
+// Download Video Function
+async function downloadVideo(url) {
+    const loading = document.getElementById('loading');
+    const downloadBtn = document.getElementById('downloadBtn');
+    
+    try {
+        // Show loading state
+        loading.style.display = 'flex';
+        downloadBtn.disabled = true;
+        downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+        
+        // Send request to PHP backend
+        const response = await fetch('download.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url: url })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            // Create download link
+            const link = document.createElement('a');
+            link.href = result.download_url;
+            link.download = result.filename || 'tiktok_video.mp4';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            showNotification('Video download started!', 'success');
+            
+            // Show video info if available
+            if (result.video_info) {
+                showVideoInfo(result.video_info);
+            }
+        } else {
+            showNotification(result.message || 'Failed to download video', 'error');
+        }
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('An error occurred while downloading the video', 'error');
+    } finally {
+        // Hide loading state
+        loading.style.display = 'none';
+        downloadBtn.disabled = false;
+        downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download';
+    }
 }
 
-// Show error message
-function showError(container, message) {
-    container.innerHTML = `<div class="error-message">${message}</div>`;
-}
-
-// Show loading state
-function showLoading(container) {
-    container.innerHTML = `<div class="loading-message"><span class="loading"></span>Processing your request...</div>`;
-}
-
-// Show download result
-function showDownloadResult(container, url) {
-    const fileName = 'tiktok_' + Math.floor(Math.random() * 1000000) + '.mp4';
-    container.innerHTML = `
-        <div class="download-result">
-            <span>Ready to download!</span>
-            <a href="#" class="download-link">Download Now</a>
+// Show Notification
+function showNotification(message, type = 'info') {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.notification');
+    existingNotifications.forEach(notification => notification.remove());
+    
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas ${getNotificationIcon(type)}"></i>
+            <span>${message}</span>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
     `;
-}
-
-// Initialize animated counters for statistics
-function initCounters() {
-    const counters = document.querySelectorAll('.stat-number');
     
-    if (!counters.length) return;
+    document.body.appendChild(notification);
     
-    const options = {
-        threshold: 0.5
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
-                let count = 0;
-                const duration = 2000; // 2 seconds
-                const interval = duration / target;
-                
-                const timer = setInterval(() => {
-                    count++;
-                    counter.textContent = count.toLocaleString();
-                    
-                    if (count >= target) {
-                        clearInterval(timer);
-                    }
-                }, interval);
-                
-                observer.unobserve(counter);
-            }
-        });
-    }, options);
-    
-    counters.forEach(counter => {
-        observer.observe(counter);
-    });
-}
-
-// Initialize testimonial slider
-function initTestimonialSlider() {
-    const slider = document.querySelector('.testimonials-slider');
-    
-    if (!slider) return;
-    
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-    
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    
-    slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2; // Scroll speed
-        slider.scrollLeft = scrollLeft - walk;
-    });
-    
-    // Auto scroll for testimonials
-    let scrollAmount = 0;
-    const scrollSpeed = 1;
-    const scrollDelay = 30;
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
-    let scrollDirection = 1;
-    
-    function autoScroll() {
-        if (!slider.matches(':hover')) {
-            scrollAmount += scrollSpeed * scrollDirection;
-            
-            if (scrollAmount >= maxScroll) {
-                scrollDirection = -1;
-            } else if (scrollAmount <= 0) {
-                scrollDirection = 1;
-            }
-            
-            slider.scrollLeft = scrollAmount;
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (notification.parentElement) {
+            notification.remove();
         }
-        
-        setTimeout(autoScroll, scrollDelay);
+    }, 5000);
+}
+
+// Get notification icon based on type
+function getNotificationIcon(type) {
+    switch (type) {
+        case 'success': return 'fa-check-circle';
+        case 'error': return 'fa-exclamation-circle';
+        case 'warning': return 'fa-exclamation-triangle';
+        default: return 'fa-info-circle';
+    }
+}
+
+// Show Video Info
+function showVideoInfo(videoInfo) {
+    const existingInfo = document.querySelector('.video-info');
+    if (existingInfo) {
+        existingInfo.remove();
     }
     
-    // Start auto scroll after 3 seconds
-    setTimeout(autoScroll, 3000);
+    const videoInfoDiv = document.createElement('div');
+    videoInfoDiv.className = 'video-info';
+    videoInfoDiv.innerHTML = `
+        <div class="video-info-content">
+            <h3>Video Information</h3>
+            <div class="video-details">
+                ${videoInfo.title ? `<p><strong>Title:</strong> ${videoInfo.title}</p>` : ''}
+                ${videoInfo.author ? `<p><strong>Author:</strong> ${videoInfo.author}</p>` : ''}
+                ${videoInfo.duration ? `<p><strong>Duration:</strong> ${videoInfo.duration}s</p>` : ''}
+                ${videoInfo.quality ? `<p><strong>Quality:</strong> ${videoInfo.quality}</p>` : ''}
+            </div>
+            <button class="close-info" onclick="this.parentElement.parentElement.remove()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(videoInfoDiv);
 }
 
-// Initialize scroll animations
-function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.feature-card, .step, .testimonial-card');
-    
-    if (!animatedElements.length) return;
-    
-    const options = {
-        threshold: 0.2
+// Lazy loading for images
+function lazyLoadImages() {
+    const images = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+}
+
+// Initialize lazy loading when DOM is loaded
+document.addEventListener('DOMContentLoaded', lazyLoadImages);
+
+// Page transition effects
+function initPageTransitions() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                observer.unobserve(entry.target);
+                entry.target.classList.add('animate-in');
             }
         });
-    }, options);
-    
-    animatedElements.forEach(element => {
-        observer.observe(element);
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.step, .faq-item, .footer-section').forEach(el => {
+        observer.observe(el);
     });
 }
 
-// Initialize mobile menu
-function initMobileMenu() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.querySelector('nav ul');
-    
-    if (!mobileMenuBtn || !navMenu) return;
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-    });
-}
+// Initialize page transitions
+document.addEventListener('DOMContentLoaded', initPageTransitions);
 
-// Add wave animation to hero section
-function createWave() {
-    const heroSection = document.querySelector('.hero');
-    
-    if (!heroSection) return;
-    
-    const wave = document.createElement('div');
-    wave.classList.add('hero-wave');
-    wave.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+// Particle background effect for hero section
+function createParticles() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    const particlesContainer = document.createElement('div');
+    particlesContainer.className = 'particles-container';
+    particlesContainer.style.cssText = `
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
     `;
-    
-    heroSection.appendChild(wave);
+
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.style.cssText = `
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 0, 80, 0.5);
+            border-radius: 50%;
+            animation: particleFloat ${5 + Math.random() * 10}s linear infinite;
+            left: ${Math.random() * 100}%;
+            top: ${Math.random() * 100}%;
+            animation-delay: ${Math.random() * 5}s;
+        `;
+        particlesContainer.appendChild(particle);
+    }
+
+    hero.appendChild(particlesContainer);
 }
 
-// Call createWave function when DOM is loaded
-document.addEventListener('DOMContentLoaded', createWave);
+// Add particle animation CSS
+const particleStyles = document.createElement('style');
+particleStyles.textContent = `
+    @keyframes particleFloat {
+        0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(particleStyles);
+
+// Initialize particles
+document.addEventListener('DOMContentLoaded', createParticles);
+
+// Form validation and enhancement
+function enhanceForm() {
+    const urlInput = document.getElementById('videoUrl');
+    if (!urlInput) return;
+
+    // Real-time validation
+    urlInput.addEventListener('input', function() {
+        const url = this.value.trim();
+        const isValid = url === '' || isValidTikTokUrl(url);
+        
+        this.style.borderColor = url === '' ? 'rgba(255, 255, 255, 0.1)' : 
+                                 isValid ? '#4ade80' : '#ef4444';
+    });
+
+    // Paste event handling
+    urlInput.addEventListener('paste', function(e) {
+        setTimeout(() => {
+            const url = this.value.trim();
+            if (isValidTikTokUrl(url)) {
+                showNotification('Valid TikTok URL detected!', 'success');
+            }
+        }, 100);
+    });
+}
+
+// Initialize form enhancements
+document.addEventListener('DOMContentLoaded', enhanceForm);
+
+// Performance monitoring
+function trackPerformance() {
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            console.log(`Page load time: ${loadTime}ms`);
+        });
+    }
+}
+
+// Initialize performance tracking
+trackPerformance();
+
+// Service Worker registration for PWA capabilities
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
