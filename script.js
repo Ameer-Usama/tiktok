@@ -99,13 +99,198 @@ async function downloadVideo(url) {
         downloadBtn.disabled = true;
         downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
         
-        // Send request to PHP backend
+        // Create download options modal
+        showDownloadOptions(url);
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('An error occurred while processing the video', 'error');
+        
+        // Hide loading state
+        loading.style.display = 'none';
+        downloadBtn.disabled = false;
+        downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download';
+    }
+}
+
+// Show Download Options
+function showDownloadOptions(url) {
+    // Remove any existing modal
+    const existingModal = document.querySelector('.download-options-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'download-options-modal';
+    modal.innerHTML = `
+        <div class="download-options-content">
+            <h3>Download Options</h3>
+            <div class="download-options">
+                <button id="option1" class="download-option">
+                    <i class="fas fa-download"></i>
+                    <span>Download without watermark</span>
+                </button>
+                <button id="option2" class="download-option">
+                    <i class="fas fa-download"></i>
+                    <span>Download in HD without watermark</span>
+                </button>
+            </div>
+            <button class="close-modal" onclick="this.parentElement.parentElement.remove(); resetDownloadButton();">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add event listeners
+    document.getElementById('option1').addEventListener('click', function() {
+        modal.remove();
+        downloadOption1(url);
+    });
+    
+    document.getElementById('option2').addEventListener('click', function() {
+        modal.remove();
+        downloadOption2(url);
+    });
+}
+
+// Reset download button
+function resetDownloadButton() {
+    const loading = document.getElementById('loading');
+    const downloadBtn = document.getElementById('downloadBtn');
+    
+    loading.style.display = 'none';
+    downloadBtn.disabled = false;
+    downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download';
+}
+
+// Download Option 1: Without watermark (with ads)
+async function downloadOption1(url) {
+    try {
+        // Show ad modal
+        showAdModal(function() {
+            // After ad is closed, proceed with download
+            processDownloadOption1(url);
+        });
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('An error occurred while downloading the video', 'error');
+        resetDownloadButton();
+    }
+}
+
+// Show Ad Modal
+function showAdModal(callback) {
+    const adModal = document.createElement('div');
+    adModal.className = 'ad-modal';
+    adModal.innerHTML = `
+        <div class="ad-modal-content">
+            <div class="ad-container">
+                <h3>Advertisement</h3>
+                <div class="ad-placeholder">
+                    <p>Advertisement Content</p>
+                </div>
+            </div>
+            <button id="closeAdBtn" class="close-ad-btn">
+                <i class="fas fa-times"></i> Close Ad
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(adModal);
+    
+    // Add event listener to close button
+    document.getElementById('closeAdBtn').addEventListener('click', function() {
+        adModal.remove();
+        if (typeof callback === 'function') {
+            callback();
+        }
+    });
+}
+
+// Show Video Ad Modal with 20-second timer
+function showVideoAdModal(url) {
+    const videoAdModal = document.createElement('div');
+    videoAdModal.className = 'video-ad-modal';
+    videoAdModal.innerHTML = `
+        <div class="video-ad-modal-content">
+            <div class="video-ad-header">
+                <h3>Advertisement</h3>
+                <div class="timer-display">
+                    <span id="adCountdown">20</span> seconds remaining
+                </div>
+            </div>
+            <div class="video-ad-container">
+                <div class="video-ad-placeholder">
+                    <!-- Video ad iframe or embed code would go here -->
+                    <div class="video-ad-player">
+                        <div class="video-ad-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Video Advertisement</p>
+                    </div>
+                </div>
+            </div>
+            <button id="closeVideoAdBtn" class="close-video-ad-btn" disabled>
+                <i class="fas fa-times"></i> Skip Ad (<span id="skipTimer">20</span>)
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(videoAdModal);
+    
+    // Set up countdown
+    let secondsLeft = 20;
+    const countdownElement = document.getElementById('adCountdown');
+    const skipTimerElement = document.getElementById('skipTimer');
+    const closeButton = document.getElementById('closeVideoAdBtn');
+    
+    // Simulate video ad playing
+    const playButton = videoAdModal.querySelector('.video-ad-play-button');
+    playButton.addEventListener('click', function() {
+        this.style.display = 'none';
+        videoAdModal.querySelector('.video-ad-player p').textContent = 'Video Ad Playing...';
+    });
+    
+    // Start countdown
+    const countdownInterval = setInterval(() => {
+        secondsLeft--;
+        countdownElement.textContent = secondsLeft;
+        skipTimerElement.textContent = secondsLeft;
+        
+        if (secondsLeft <= 0) {
+            clearInterval(countdownInterval);
+            closeButton.disabled = false;
+            closeButton.innerHTML = '<i class="fas fa-times"></i> Skip Ad';
+        }
+    }, 1000);
+    
+    // Add event listener to close button
+    closeButton.addEventListener('click', function() {
+        if (secondsLeft <= 0) {
+            clearInterval(countdownInterval);
+            videoAdModal.remove();
+            processDownloadOption2(url);
+        }
+    });
+}
+
+// Process Download Option 1
+async function processDownloadOption1(url) {
+    try {
+        const loading = document.getElementById('loading');
+        loading.style.display = 'flex';
+        
+        // Send request to PHP backend for option 1
         const response = await fetch('download.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ url: url })
+            body: JSON.stringify({ url: url, option: 1 })
         });
         
         const result = await response.json();
@@ -132,10 +317,192 @@ async function downloadVideo(url) {
         console.error('Download error:', error);
         showNotification('An error occurred while downloading the video', 'error');
     } finally {
-        // Hide loading state
-        loading.style.display = 'none';
-        downloadBtn.disabled = false;
-        downloadBtn.innerHTML = '<i class="fas fa-download"></i> Download';
+        resetDownloadButton();
+    }
+}
+
+// Download Option 2: HD without watermark (with video ad)
+async function downloadOption2(url) {
+    try {
+        // Track download count
+        incrementDownloadCounter();
+        // Show video ad modal with 20-second timer
+        showVideoAdModal(url);
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('An error occurred while downloading the video', 'error');
+        resetDownloadButton();
+    }
+}
+
+// Track download counter
+let downloadCount = 0;
+
+function incrementDownloadCounter() {
+    downloadCount++;
+    // Display the counter
+    showDownloadCounter();
+    // Save to localStorage for persistence
+    localStorage.setItem('hdDownloadCount', downloadCount);
+}
+
+function showDownloadCounter() {
+    // Create or update download counter display
+    let counterDisplay = document.getElementById('downloadCounter');
+    
+    if (!counterDisplay) {
+        counterDisplay = document.createElement('div');
+        counterDisplay.id = 'downloadCounter';
+        counterDisplay.className = 'download-counter';
+        document.body.appendChild(counterDisplay);
+    }
+    
+    counterDisplay.innerHTML = `
+        <div class="counter-content">
+            <i class="fas fa-download"></i>
+            <span>HD Downloads: ${downloadCount}</span>
+        </div>
+    `;
+    
+    // Show counter
+    counterDisplay.style.display = 'block';
+    
+    // Auto hide after 5 seconds
+    setTimeout(() => {
+        counterDisplay.style.display = 'none';
+    }, 5000);
+}
+
+// Initialize download counter from localStorage
+document.addEventListener('DOMContentLoaded', function() {
+    // Get saved count from localStorage
+    const savedCount = localStorage.getItem('hdDownloadCount');
+    if (savedCount) {
+        downloadCount = parseInt(savedCount);
+    }
+});
+
+// Show Timer Modal (kept for reference but no longer used directly)
+function showTimerModal(url) {
+    const timerModal = document.createElement('div');
+    timerModal.className = 'timer-modal';
+    timerModal.innerHTML = `
+        <div class="timer-modal-content">
+            <h3>Please Wait</h3>
+            <p>Your HD download will start in <span id="countdown">20</span> seconds</p>
+            <div class="timer-progress">
+                <div class="timer-bar" id="timerBar"></div>
+            </div>
+            <button id="cancelTimerBtn" class="cancel-timer-btn">
+                Cancel
+            </button>
+        </div>
+    `;
+    
+    document.body.appendChild(timerModal);
+    
+    // Set up countdown
+    let secondsLeft = 20;
+    const countdownElement = document.getElementById('countdown');
+    const timerBar = document.getElementById('timerBar');
+    
+    // Start timer animation
+    timerBar.style.transition = 'width 20s linear';
+    timerBar.style.width = '100%';
+    
+    const countdownInterval = setInterval(() => {
+        secondsLeft--;
+        countdownElement.textContent = secondsLeft;
+        
+        if (secondsLeft <= 0) {
+            clearInterval(countdownInterval);
+            timerModal.remove();
+            processDownloadOption2(url);
+        }
+    }, 1000);
+    
+    // Add event listener to cancel button
+    document.getElementById('cancelTimerBtn').addEventListener('click', function() {
+        clearInterval(countdownInterval);
+        timerModal.remove();
+        showCancelConfirmation(url);
+    });
+}
+
+// Show Cancel Confirmation
+function showCancelConfirmation(url) {
+    const confirmModal = document.createElement('div');
+    confirmModal.className = 'confirm-modal';
+    confirmModal.innerHTML = `
+        <div class="confirm-modal-content">
+            <h3>Download Canceled</h3>
+            <p>If you cancel, the download will not work.</p>
+            <div class="confirm-buttons">
+                <button id="resumeTimerBtn" class="resume-btn">
+                    Resume Download
+                </button>
+                <button id="confirmCancelBtn" class="cancel-btn">
+                    Cancel Download
+                </button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(confirmModal);
+    
+    // Add event listeners
+    document.getElementById('resumeTimerBtn').addEventListener('click', function() {
+        confirmModal.remove();
+        showTimerModal(url);
+    });
+    
+    document.getElementById('confirmCancelBtn').addEventListener('click', function() {
+        confirmModal.remove();
+        resetDownloadButton();
+        showNotification('Download canceled', 'info');
+    });
+}
+
+// Process Download Option 2
+async function processDownloadOption2(url) {
+    try {
+        const loading = document.getElementById('loading');
+        loading.style.display = 'flex';
+        
+        // Send request to PHP backend for option 2
+        const response = await fetch('download.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url: url, option: 2 })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            // Create download link
+            const link = document.createElement('a');
+            link.href = result.download_url;
+            link.download = result.filename || 'tiktok_video_hd.mp4';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            showNotification('HD Video download started!', 'success');
+            
+            // Show video info if available
+            if (result.video_info) {
+                showVideoInfo(result.video_info);
+            }
+        } else {
+            showNotification(result.message || 'Failed to download video', 'error');
+        }
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('An error occurred while downloading the video', 'error');
+    } finally {
+        resetDownloadButton();
     }
 }
 
