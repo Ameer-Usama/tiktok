@@ -1,0 +1,139 @@
+/* Language Switcher Styles */
+.language-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 1000;
+  margin-right: 20px;
+}
+
+.language-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-button .arrow {
+  margin-left: 8px;
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 180px;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1001;
+  margin-top: 5px;
+}
+
+.language-dropdown.show {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.language-option {
+  padding: 10px 15px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+  background-color: #f5f5f5;
+}
+
+.language-option.active {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #ff3366;
+}
+
+/* RTL Support */
+html[dir="rtl"] .language-switcher {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+html[dir="rtl"] .language-button .arrow {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+html[dir="rtl"] .language-dropdown {
+  right: auto;
+  left: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .language-switcher {
+    margin-right: 15px;
+  }
+  
+  .language-button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  
+  .language-dropdown {
+    width: 160px;
+    right: -10px;
+  }
+  
+  html[dir="rtl"] .language-switcher {
+    margin-right: 10px;
+  }
+  
+  html[dir="rtl"] .language-dropdown {
+    left: -10px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .language-dropdown {
+    background-color: #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .language-option {
+    color: #eee;
+  }
+  
+  .language-option:hover {
+    background-color: #333;
+  }
+  
+  .language-option.active {
+    background-color: #444;
+    color: #ff3366;
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Video Downloader",
+    "storyDownloader": "Story Downloader",
+    "sliderDownloader": "Slider Downloader"
+  },
+  "hero": {
+    "title": "Download TikTok Video's",
+    "titleHighlight": "Zonder Watermerk",
+    "description": "Gratis, snelle en gebruiksvriendelijke TikTok video downloader. Sla je favoriete TikTok video's op in HD-kwaliteit zonder watermerken.",
+    "inputPlaceholder": "Plak TikTok video URL hier...",
+    "downloadButton": "Downloaden",
+    "processing": "Je video wordt verwerkt...",
+    "features": {
+      "noWatermark": "Geen Watermerk",
+      "hdQuality": "HD Kwaliteit",
+      "superFast": "Supersnel",
+      "allDevices": "Alle Apparaten"
+    }
+  },
+  "howToUse": {
+    "title": "Hoe TikTok Video's te Downloaden",
+    "steps": {
+      "step1": {
+        "title": "Kopieer TikTok URL",
+        "description": "Open de TikTok app, vind je video, tik op \"Delen\" en kopieer de link"
+      },
+      "step2": {
+        "title": "Plak URL",
+        "description": "Plak de TikTok video URL in onze downloader hierboven"
+      },
+      "step3": {
+        "title": "Download Video",
+        "description": "Klik op de download knop en sla de video op je apparaat op"
+      }
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "questions": {
+      "q1": {
+        "question": "Is deze TikTok downloader gratis te gebruiken?",
+        "answer": "Ja, onze TikTok video downloader is volledig gratis te gebruiken. Je kunt onbeperkt TikTok video's downloaden zonder kosten of registratie."
+      },
+      "q2": {
+        "question": "Moet ik software installeren?",
+        "answer": "Geen installatie nodig! Onze TikTok downloader werkt direct in je webbrowser op elk apparaat - desktop, mobiel of tablet."
+      },
+      "q3": {
+        "question": "Welke videokwaliteit kan ik downloaden?",
+        "answer": "Onze tool biedt de best mogelijke kwaliteit voor TikTok video's, meestal HD (720p) of hoger, afhankelijk van de originele kwaliteit van de video."
+      },
+      "q4": {
+        "question": "Hoe verwijder ik het TikTok watermerk?",
+        "answer": "Je hoeft niets te doen! Onze tool verwijdert automatisch het TikTok watermerk wanneer je een video download."
+      },
+      "q5": {
+        "question": "Kan ik TikTok video's downloaden op mijn iPhone/Android apparaat?",
+        "answer": "Ja, onze TikTok downloader werkt op alle apparaten met een webbrowser, inclusief iPhone, Android, Windows en Mac."
+      },
+      "q6": {
+        "question": "Is er een limiet aan downloads?",
+        "answer": "Nee, er is geen limiet aan het aantal video's dat je kunt downloaden. Geniet van onbeperkt downloaden!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Disclaimer",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Servicevoorwaarden",
+    "copyright": "© 2023 TikTok Downloader. Alle rechten voorbehouden."
+  }
+}

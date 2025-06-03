@@ -35,12 +35,13 @@ body {
 }
 
 .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -60,6 +61,11 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav-link {
@@ -1090,6 +1096,71 @@ body {
     
     .confirm-buttons {
         flex-direction: column;
+    }
+}
+
+/* Ad Container Styles */
+.ad-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ad-placeholder {
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(255, 0, 80, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.ad-placeholder:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 0, 80, 0.5);
+}
+
+.ad-banner-top {
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+.ad-banner-middle {
+    margin: 3rem auto;
+}
+
+.ad-banner-bottom {
+    margin: 3rem auto 1rem;
+}
+
+.ad-banner-inline {
+    margin: 2rem auto;
+}
+
+.ad-banner-inline .ad-placeholder {
+    height: 120px;
+}
+
+@media (max-width: 768px) {
+    .ad-container {
+        padding: 0 15px;
+    }
+    
+    .ad-placeholder {
+        height: 70px;
+        font-size: 0.9rem;
+    }
+    
+    .ad-banner-inline .ad-placeholder {
+        height: 100px;
     }
 }
 

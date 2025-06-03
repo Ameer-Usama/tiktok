@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Video Downloader",
+    "storyDownloader": "Story Downloader",
+    "sliderDownloader": "Slider Downloader"
+  },
+  "hero": {
+    "title": "TikTok Videos herunterladen",
+    "titleHighlight": "Ohne Wasserzeichen",
+    "description": "Kostenloser, schneller und einfach zu bedienender TikTok-Video-Downloader. Speichern Sie Ihre Lieblings-TikTok-Videos in HD-Qualität ohne Wasserzeichen.",
+    "inputPlaceholder": "TikTok-Video-URL hier einfügen...",
+    "downloadButton": "Herunterladen",
+    "processing": "Ihr Video wird verarbeitet...",
+    "features": {
+      "noWatermark": "Kein Wasserzeichen",
+      "hdQuality": "HD-Qualität",
+      "superFast": "Superschnell",
+      "allDevices": "Alle Geräte"
+    }
+  },
+  "howToUse": {
+    "title": "Wie man TikTok-Videos herunterlädt",
+    "steps": {
+      "step1": {
+        "title": "TikTok-URL kopieren",
+        "description": "Öffnen Sie die TikTok-App, finden Sie Ihr Video, tippen Sie auf \"Teilen\" und kopieren Sie den Link"
+      },
+      "step2": {
+        "title": "URL einfügen",
+        "description": "Fügen Sie die TikTok-Video-URL in unseren Downloader oben ein"
+      },
+      "step3": {
+        "title": "Video herunterladen",
+        "description": "Klicken Sie auf die Schaltfläche Herunterladen und speichern Sie das Video auf Ihrem Gerät"
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": {
+      "q1": {
+        "question": "Ist dieser TikTok-Downloader kostenlos zu benutzen?",
+        "answer": "Ja, unser TikTok-Video-Downloader ist völlig kostenlos. Sie können unbegrenzt TikTok-Videos ohne Gebühren oder Registrierung herunterladen."
+      },
+      "q2": {
+        "question": "Muss ich Software installieren?",
+        "answer": "Keine Installation erforderlich! Unser TikTok-Downloader funktioniert direkt in Ihrem Webbrowser auf jedem Gerät - Desktop, Handy oder Tablet."
+      },
+      "q3": {
+        "question": "In welcher Videoqualität kann ich herunterladen?",
+        "answer": "Unser Tool bietet die bestmögliche Qualität für TikTok-Videos, normalerweise HD (720p) oder höher, abhängig von der Originalqualität des Videos."
+      },
+      "q4": {
+        "question": "Wie entferne ich das TikTok-Wasserzeichen?",
+        "answer": "Sie müssen nichts tun! Unser Tool entfernt automatisch das TikTok-Wasserzeichen, wenn Sie ein Video herunterladen."
+      },
+      "q5": {
+        "question": "Kann ich TikTok-Videos auf meinem iPhone/Android-Gerät herunterladen?",
+        "answer": "Ja, unser TikTok-Downloader funktioniert auf allen Geräten mit einem Webbrowser, einschließlich iPhone, Android, Windows und Mac."
+      },
+      "q6": {
+        "question": "Gibt es ein Limit für Downloads?",
+        "answer": "Nein, es gibt keine Begrenzung für die Anzahl der Videos, die Sie herunterladen können. Genießen Sie unbegrenztes Herunterladen!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Haftungsausschluss",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "copyright": "© 2023 TikTok Downloader. Alle Rechte vorbehalten."
+  }
+}

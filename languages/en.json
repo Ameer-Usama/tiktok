@@ -1,0 +1,102 @@
+{
+  "header": {
+    "videoDownloader": "Video Downloader",
+    "storyDownloader": "Story Downloader",
+    "sliderDownloader": "Slider Downloader"
+  },
+  "hero": {
+    "title": "Download TikTok Videos",
+    "titleHighlight": "Without Watermark",
+    "description": "Free, fast, and easy-to-use TikTok video downloader. Save your favorite TikTok videos in HD quality without watermarks.",
+    "inputPlaceholder": "Paste TikTok video URL here...",
+    "downloadButton": "Download",
+    "processing": "Processing your video...",
+    "features": {
+      "noWatermark": "No Watermark",
+      "hdQuality": "HD Quality",
+      "superFast": "Super Fast",
+      "allDevices": "All Devices"
+    }
+  },
+  "howToUse": {
+    "title": "How to Download TikTok Videos",
+    "steps": {
+      "step1": {
+        "title": "Copy TikTok URL",
+        "description": "Open TikTok app, find your video, tap \"Share\" and copy the link"
+      },
+      "step2": {
+        "title": "Paste URL",
+        "description": "Paste the TikTok video URL into our downloader above"
+      },
+      "step3": {
+        "title": "Download Video",
+        "description": "Click download button and save the video to your device"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "q1": {
+        "question": "Is this TikTok downloader free to use?",
+        "answer": "Yes, our TikTok video downloader is completely free to use. You can download unlimited TikTok videos without any charges or registration required."
+      },
+      "q2": {
+        "question": "Do I need to install any software?",
+        "answer": "No installation required! Our TikTok downloader works directly in your web browser on any device - desktop, mobile, or tablet."
+      },
+      "q3": {
+        "question": "What video quality can I download?",
+        "answer": "You can download TikTok videos in HD quality (up to 1080p) depending on the original video quality uploaded by the creator."
+      },
+      "q4": {
+        "question": "Will the downloaded video have a watermark?",
+        "answer": "No, our downloader removes the TikTok watermark, giving you clean videos without any branding or logos."
+      },
+      "q5": {
+        "question": "Is it safe to use this downloader?",
+        "answer": "Absolutely! We don't store your videos or personal information. The download process is secure and your privacy is protected."
+      }
+    }
+  },
+  "downloadOptions": {
+    "title": "Download Options",
+    "option1": "Download without watermark",
+    "option2": "Download in HD without watermark",
+    "close": "Close"
+  },
+  "notifications": {
+    "enterUrl": "Please enter a TikTok video URL",
+    "validUrl": "Please enter a valid TikTok video URL",
+    "validUrlDetected": "Valid TikTok URL detected!",
+    "downloadStarted": "Video download started!",
+    "hdDownloadStarted": "HD Video download started!",
+    "downloadError": "An error occurred while downloading the video",
+    "downloadCanceled": "Download canceled"
+  },
+  "ads": {
+    "advertisement": "Advertisement",
+    "secondsRemaining": "seconds remaining",
+    "skipAd": "Skip Ad"
+  },
+  "videoInfo": {
+    "title": "Video Information",
+    "videoTitle": "Title",
+    "author": "Author",
+    "duration": "Duration",
+    "quality": "Quality"
+  },
+  "footer": {
+    "description": "The fastest and easiest way to download TikTok videos without watermarks.",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "disclaimer": "Disclaimer"
+    },
+    "copyright": "© 2023 TikDown. All rights reserved."
+  }
+}

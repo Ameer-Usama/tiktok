@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Pengunduh Video",
+    "storyDownloader": "Pengunduh Story",
+    "sliderDownloader": "Pengunduh Slider"
+  },
+  "hero": {
+    "title": "Unduh Video TikTok",
+    "titleHighlight": "Tanpa Watermark",
+    "description": "Pengunduh video TikTok gratis, cepat, dan mudah digunakan. Simpan video TikTok favorit Anda dalam kualitas HD tanpa watermark.",
+    "inputPlaceholder": "Tempel URL video TikTok di sini...",
+    "downloadButton": "Unduh",
+    "processing": "Memproses video Anda...",
+    "features": {
+      "noWatermark": "Tanpa Watermark",
+      "hdQuality": "Kualitas HD",
+      "superFast": "Super Cepat",
+      "allDevices": "Semua Perangkat"
+    }
+  },
+  "howToUse": {
+    "title": "Cara Mengunduh Video TikTok",
+    "steps": {
+      "step1": {
+        "title": "Salin URL TikTok",
+        "description": "Buka aplikasi TikTok, temukan video Anda, ketuk \"Bagikan\" dan salin tautan"
+      },
+      "step2": {
+        "title": "Tempel URL",
+        "description": "Tempel URL video TikTok ke pengunduh kami di atas"
+      },
+      "step3": {
+        "title": "Unduh Video",
+        "description": "Klik tombol unduh dan simpan video ke perangkat Anda"
+      }
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "questions": {
+      "q1": {
+        "question": "Apakah pengunduh TikTok ini gratis untuk digunakan?",
+        "answer": "Ya, pengunduh video TikTok kami sepenuhnya gratis untuk digunakan. Anda dapat mengunduh video TikTok tanpa batas tanpa biaya atau pendaftaran yang diperlukan."
+      },
+      "q2": {
+        "question": "Apakah saya perlu menginstal perangkat lunak apa pun?",
+        "answer": "Tidak perlu instalasi! Pengunduh TikTok kami bekerja langsung di browser web Anda di perangkat apa pun - desktop, ponsel, atau tablet."
+      },
+      "q3": {
+        "question": "Kualitas video apa yang bisa saya unduh?",
+        "answer": "Alat kami menawarkan kualitas terbaik yang mungkin untuk video TikTok, biasanya HD (720p) atau lebih tinggi, tergantung pada kualitas asli video."
+      },
+      "q4": {
+        "question": "Bagaimana cara menghapus watermark TikTok?",
+        "answer": "Anda tidak perlu melakukan apa pun! Alat kami secara otomatis menghapus watermark TikTok saat Anda mengunduh video."
+      },
+      "q5": {
+        "question": "Bisakah saya mengunduh video TikTok di iPhone/perangkat Android saya?",
+        "answer": "Ya, pengunduh TikTok kami bekerja di semua perangkat dengan browser web, termasuk iPhone, Android, Windows, dan Mac."
+      },
+      "q6": {
+        "question": "Apakah ada batasan unduhan?",
+        "answer": "Tidak, tidak ada batasan jumlah video yang dapat Anda unduh. Nikmati unduhan tanpa batas!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Penafian",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Ketentuan Layanan",
+    "copyright": "© 2023 TikTok Downloader. Semua hak dilindungi undang-undang."
+  }
+}

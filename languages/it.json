@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Scaricatore di Video",
+    "storyDownloader": "Scaricatore di Storie",
+    "sliderDownloader": "Scaricatore di Slider"
+  },
+  "hero": {
+    "title": "Scarica Video TikTok",
+    "titleHighlight": "Senza Filigrana",
+    "description": "Scaricatore di video TikTok gratuito, veloce e facile da usare. Salva i tuoi video TikTok preferiti in qualità HD senza filigrane.",
+    "inputPlaceholder": "Incolla qui l'URL del video TikTok...",
+    "downloadButton": "Scarica",
+    "processing": "Elaborazione del tuo video...",
+    "features": {
+      "noWatermark": "Senza Filigrana",
+      "hdQuality": "Qualità HD",
+      "superFast": "Super Veloce",
+      "allDevices": "Tutti i Dispositivi"
+    }
+  },
+  "howToUse": {
+    "title": "Come Scaricare Video TikTok",
+    "steps": {
+      "step1": {
+        "title": "Copia l'URL di TikTok",
+        "description": "Apri l'app TikTok, trova il tuo video, tocca \"Condividi\" e copia il link"
+      },
+      "step2": {
+        "title": "Incolla l'URL",
+        "description": "Incolla l'URL del video TikTok nel nostro scaricatore qui sopra"
+      },
+      "step3": {
+        "title": "Scarica il Video",
+        "description": "Clicca sul pulsante di download e salva il video sul tuo dispositivo"
+      }
+    }
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "questions": {
+      "q1": {
+        "question": "Questo scaricatore TikTok è gratuito?",
+        "answer": "Sì, il nostro scaricatore di video TikTok è completamente gratuito. Puoi scaricare un numero illimitato di video TikTok senza alcun costo o registrazione richiesta."
+      },
+      "q2": {
+        "question": "Devo installare qualche software?",
+        "answer": "Nessuna installazione richiesta! Il nostro scaricatore TikTok funziona direttamente nel tuo browser web su qualsiasi dispositivo - desktop, mobile o tablet."
+      },
+      "q3": {
+        "question": "Quale qualità video posso scaricare?",
+        "answer": "Il nostro strumento offre la migliore qualità possibile per i video TikTok, generalmente HD (720p) o superiore, a seconda della qualità originale del video."
+      },
+      "q4": {
+        "question": "Come rimuovo la filigrana TikTok?",
+        "answer": "Non devi fare nulla! Il nostro strumento rimuove automaticamente la filigrana TikTok quando scarichi un video."
+      },
+      "q5": {
+        "question": "Posso scaricare video TikTok sul mio iPhone/dispositivo Android?",
+        "answer": "Sì, il nostro scaricatore TikTok funziona su tutti i dispositivi con un browser web, inclusi iPhone, Android, Windows e Mac."
+      },
+      "q6": {
+        "question": "C'è un limite ai download?",
+        "answer": "No, non c'è alcun limite al numero di video che puoi scaricare. Goditi download illimitati!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Disclaimer",
+    "privacyPolicy": "Politica sulla Privacy",
+    "termsOfService": "Termini di Servizio",
+    "copyright": "© 2023 TikTok Downloader. Tutti i diritti riservati."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Pobieranie Wideo",
+    "storyDownloader": "Pobieranie Historii",
+    "sliderDownloader": "Pobieranie Slajdów"
+  },
+  "hero": {
+    "title": "Pobierz Filmy z TikToka",
+    "titleHighlight": "Bez Znaku Wodnego",
+    "description": "Darmowe, szybkie i łatwe w użyciu narzędzie do pobierania filmów z TikToka. Zapisuj swoje ulubione filmy z TikToka w jakości HD bez znaków wodnych.",
+    "inputPlaceholder": "Wklej tutaj adres URL filmu z TikToka...",
+    "downloadButton": "Pobierz",
+    "processing": "Przetwarzanie twojego filmu...",
+    "features": {
+      "noWatermark": "Bez Znaku Wodnego",
+      "hdQuality": "Jakość HD",
+      "superFast": "Super Szybko",
+      "allDevices": "Wszystkie Urządzenia"
+    }
+  },
+  "howToUse": {
+    "title": "Jak Pobierać Filmy z TikToka",
+    "steps": {
+      "step1": {
+        "title": "Skopiuj URL z TikToka",
+        "description": "Otwórz aplikację TikTok, znajdź swój film, dotknij \"Udostępnij\" i skopiuj link"
+      },
+      "step2": {
+        "title": "Wklej URL",
+        "description": "Wklej adres URL filmu z TikToka do naszego narzędzia powyżej"
+      },
+      "step3": {
+        "title": "Pobierz Film",
+        "description": "Kliknij przycisk pobierania i zapisz film na swoim urządzeniu"
+      }
+    }
+  },
+  "faq": {
+    "title": "Często Zadawane Pytania",
+    "questions": {
+      "q1": {
+        "question": "Czy to narzędzie do pobierania z TikToka jest darmowe?",
+        "answer": "Tak, nasze narzędzie do pobierania filmów z TikToka jest całkowicie darmowe. Możesz pobierać nieograniczoną liczbę filmów z TikToka bez żadnych opłat czy rejestracji."
+      },
+      "q2": {
+        "question": "Czy muszę instalować jakieś oprogramowanie?",
+        "answer": "Instalacja nie jest wymagana! Nasze narzędzie do pobierania z TikToka działa bezpośrednio w przeglądarce internetowej na dowolnym urządzeniu - komputerze, telefonie lub tablecie."
+      },
+      "q3": {
+        "question": "W jakiej jakości mogę pobierać filmy?",
+        "answer": "Nasze narzędzie oferuje najlepszą możliwą jakość dla filmów z TikToka, zazwyczaj HD (720p) lub wyższą, w zależności od oryginalnej jakości filmu."
+      },
+      "q4": {
+        "question": "Jak usunąć znak wodny TikToka?",
+        "answer": "Nie musisz nic robić! Nasze narzędzie automatycznie usuwa znak wodny TikToka podczas pobierania filmu."
+      },
+      "q5": {
+        "question": "Czy mogę pobierać filmy z TikToka na iPhone/urządzenie z Androidem?",
+        "answer": "Tak, nasze narzędzie do pobierania z TikToka działa na wszystkich urządzeniach z przeglądarką internetową, w tym iPhone, Android, Windows i Mac."
+      },
+      "q6": {
+        "question": "Czy istnieje limit pobierania?",
+        "answer": "Nie, nie ma limitu liczby filmów, które możesz pobrać. Ciesz się nieograniczonym pobieraniem!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Zastrzeżenie",
+    "privacyPolicy": "Polityka Prywatności",
+    "termsOfService": "Warunki Korzystania z Usługi",
+    "copyright": "© 2023 TikTok Downloader. Wszelkie prawa zastrzeżone."
+  }
+}

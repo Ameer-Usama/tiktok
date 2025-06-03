@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Tải Video",
+    "storyDownloader": "Tải Story",
+    "sliderDownloader": "Tải Slider"
+  },
+  "hero": {
+    "title": "Tải Video TikTok",
+    "titleHighlight": "Không Có Watermark",
+    "description": "Công cụ tải video TikTok miễn phí, nhanh chóng và dễ sử dụng. Lưu các video TikTok yêu thích của bạn với chất lượng HD mà không có watermark.",
+    "inputPlaceholder": "Dán URL video TikTok vào đây...",
+    "downloadButton": "Tải Xuống",
+    "processing": "Đang xử lý video của bạn...",
+    "features": {
+      "noWatermark": "Không Watermark",
+      "hdQuality": "Chất Lượng HD",
+      "superFast": "Siêu Nhanh",
+      "allDevices": "Mọi Thiết Bị"
+    }
+  },
+  "howToUse": {
+    "title": "Cách Tải Video TikTok",
+    "steps": {
+      "step1": {
+        "title": "Sao chép URL TikTok",
+        "description": "Mở ứng dụng TikTok, tìm video của bạn, nhấn \"Chia sẻ\" và sao chép liên kết"
+      },
+      "step2": {
+        "title": "Dán URL",
+        "description": "Dán URL video TikTok vào công cụ tải xuống ở trên"
+      },
+      "step3": {
+        "title": "Tải Video",
+        "description": "Nhấn nút tải xuống và lưu video vào thiết bị của bạn"
+      }
+    }
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "questions": {
+      "q1": {
+        "question": "Công cụ tải TikTok này có miễn phí không?",
+        "answer": "Có, công cụ tải video TikTok của chúng tôi hoàn toàn miễn phí. Bạn có thể tải xuống không giới hạn video TikTok mà không cần trả phí hoặc đăng ký."
+      },
+      "q2": {
+        "question": "Tôi có cần cài đặt phần mềm nào không?",
+        "answer": "Không cần cài đặt! Công cụ tải TikTok của chúng tôi hoạt động trực tiếp trong trình duyệt web của bạn trên bất kỳ thiết bị nào - máy tính để bàn, di động hoặc máy tính bảng."
+      },
+      "q3": {
+        "question": "Tôi có thể tải xuống video với chất lượng nào?",
+        "answer": "Công cụ của chúng tôi cung cấp chất lượng tốt nhất có thể cho video TikTok, thường là HD (720p) hoặc cao hơn, tùy thuộc vào chất lượng gốc của video."
+      },
+      "q4": {
+        "question": "Làm thế nào để xóa watermark TikTok?",
+        "answer": "Bạn không cần làm gì cả! Công cụ của chúng tôi tự động xóa watermark TikTok khi bạn tải xuống video."
+      },
+      "q5": {
+        "question": "Tôi có thể tải video TikTok trên iPhone/thiết bị Android không?",
+        "answer": "Có, công cụ tải TikTok của chúng tôi hoạt động trên tất cả các thiết bị có trình duyệt web, bao gồm iPhone, Android, Windows và Mac."
+      },
+      "q6": {
+        "question": "Có giới hạn tải xuống không?",
+        "answer": "Không, không có giới hạn số lượng video bạn có thể tải xuống. Hãy tận hưởng việc tải xuống không giới hạn!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Tuyên Bố Miễn Trừ",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsOfService": "Điều Khoản Dịch Vụ",
+    "copyright": "© 2023 TikTok Downloader. Tất cả quyền được bảo lưu."
+  }
+}

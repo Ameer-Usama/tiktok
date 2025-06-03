@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TikTok Video Downloader - Download TikTok Videos Online</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="languages/language.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -17,10 +18,18 @@
                     <span>TikDown</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Video Downloader</a></li>
-                    <li><a href="story-downloader.html" class="nav-link">Story Downloader</a></li>
-                    <li><a href="slider-downloader.html" class="nav-link">Slider Downloader</a></li>
+                    <li><a href="index.html" class="nav-link active" data-i18n="header.videoDownloader">Video Downloader</a></li>
+                    <li><a href="story-downloader.html" class="nav-link" data-i18n="header.storyDownloader">Story Downloader</a></li>
+                    <li><a href="slider-downloader.html" class="nav-link" data-i18n="header.sliderDownloader">Slider Downloader</a></li>
                 </ul>
+                <div id="language-switcher" class="language-switcher">
+                    <button id="language-button" class="language-button">
+                        <span id="current-language">English</span> <span class="arrow">▼</span>
+                    </button>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <!-- Language options will be populated by JavaScript -->
+                    </div>
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -35,41 +44,41 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Download TikTok Videos
-                    <span class="gradient-text">Without Watermark</span>
+                    <span data-i18n="hero.title">Download TikTok Videos</span>
+                    <span class="gradient-text" data-i18n="hero.titleHighlight">Without Watermark</span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description" data-i18n="hero.description">
                     Free, fast, and easy-to-use TikTok video downloader. Save your favorite TikTok videos in HD quality without watermarks.
                 </p>
                 <div class="download-form">
                     <div class="input-container">
-                        <input type="url" id="videoUrl" placeholder="Paste TikTok video URL here..." class="url-input">
+                        <input type="url" id="videoUrl" data-i18n-placeholder="hero.inputPlaceholder" placeholder="Paste TikTok video URL here..." class="url-input">
                         <button type="button" id="downloadBtn" class="download-btn">
                             <i class="fas fa-download"></i>
-                            Download
+                            <span data-i18n="hero.downloadButton">Download</span>
                         </button>
                     </div>
                     <div class="loading" id="loading" style="display: none;">
                         <div class="spinner"></div>
-                        <span>Processing your video...</span>
+                        <span data-i18n="hero.processing">Processing your video...</span>
                     </div>
                 </div>
                 <div class="features">
                     <div class="feature">
                         <i class="fas fa-shield-alt"></i>
-                        <span>No Watermark</span>
+                        <span data-i18n="hero.features.noWatermark">No Watermark</span>
                     </div>
                     <div class="feature">
                         <i class="fas fa-hd-video"></i>
-                        <span>HD Quality</span>
+                        <span data-i18n="hero.features.hdQuality">HD Quality</span>
                     </div>
                     <div class="feature">
                         <i class="fas fa-bolt"></i>
-                        <span>Super Fast</span>
+                        <span data-i18n="hero.features.superFast">Super Fast</span>
                     </div>
                     <div class="feature">
                         <i class="fas fa-mobile-alt"></i>
-                        <span>All Devices</span>
+                        <span data-i18n="hero.features.allDevices">All Devices</span>
                     </div>
                 </div>
             </div>
@@ -99,89 +108,125 @@
         </div>
     </section>
 
+    <!-- Ad Banner 1 - Below Hero Section -->
+    <div class="ad-container ad-banner-top">
+        <div class="ad-placeholder">
+            <span>Advertisement</span>
+        </div>
+    </div>
+
     <!-- How to Use Section -->
     <section class="how-to-use">
         <div class="container">
-            <h2 class="section-title">How to Download TikTok Videos</h2>
+            <h2 class="section-title" data-i18n="howToUse.title">How to Download TikTok Videos</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Copy TikTok URL</h3>
-                        <p>Open TikTok app, find your video, tap "Share" and copy the link</p>
+                        <h3 data-i18n="howToUse.steps.step1.title">Copy TikTok URL</h3>
+                        <p data-i18n="howToUse.steps.step1.description">Open TikTok app, find your video, tap "Share" and copy the link</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Paste URL</h3>
-                        <p>Paste the TikTok video URL into our downloader above</p>
+                        <h3 data-i18n="howToUse.steps.step2.title">Paste URL</h3>
+                        <p data-i18n="howToUse.steps.step2.description">Paste the TikTok video URL into our downloader above</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Download Video</h3>
-                        <p>Click download button and save the video to your device</p>
+                        <h3 data-i18n="howToUse.steps.step3.title">Download Video</h3>
+                        <p data-i18n="howToUse.steps.step3.description">Click download button and save the video to your device</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Ad Banner 2 - After Hero Section -->
+    <div class="ad-container ad-banner-middle">
+        <div class="ad-placeholder">
+            <span>Advertisement</span>
+        </div>
+    </div>
+
+    <!-- Ad Banner 3 - Between How-to-Use and FAQ -->
+    <div class="ad-container ad-banner-middle">
+        <div class="ad-placeholder">
+            <span>Advertisement</span>
+        </div>
+    </div>
+
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Is this TikTok downloader free to use?</h3>
+                        <h3 data-i18n="faq.questions.q1.question">Is this TikTok downloader free to use?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, our TikTok video downloader is completely free to use. You can download unlimited TikTok videos without any charges or registration required.</p>
+                        <p data-i18n="faq.questions.q1.answer">Yes, our TikTok video downloader is completely free to use. You can download unlimited TikTok videos without any charges or registration required.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Do I need to install any software?</h3>
+                        <h3 data-i18n="faq.questions.q2.question">Do I need to install any software?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>No installation required! Our TikTok downloader works directly in your web browser on any device - desktop, mobile, or tablet.</p>
+                        <p data-i18n="faq.questions.q2.answer">No installation required! Our TikTok downloader works directly in your web browser on any device - desktop, mobile, or tablet.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What video quality can I download?</h3>
+                        <h3 data-i18n="faq.questions.q3.question">What video quality can I download?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>You can download TikTok videos in HD quality (up to 1080p) depending on the original video quality uploaded by the creator.</p>
+                        <p data-i18n="faq.questions.q3.answer">You can download TikTok videos in HD quality (up to 1080p) depending on the original video quality uploaded by the creator.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Will the downloaded video have a watermark?</h3>
+                        <h3 data-i18n="faq.questions.q4.question">Will the downloaded video have a watermark?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>No, our downloader removes the TikTok watermark, giving you clean videos without any branding or logos.</p>
+                        <p data-i18n="faq.questions.q4.answer">No, our downloader removes the TikTok watermark, giving you clean videos without any branding or logos.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Is it safe to use this downloader?</h3>
+                        <h3 data-i18n="faq.questions.q5.question">Is it safe to use this downloader?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! We don't store your videos or personal information. The download process is secure and your privacy is protected.</p>
+                        <p data-i18n="faq.questions.q5.answer">Absolutely! We don't store your videos or personal information. The download process is secure and your privacy is protected.</p>
                     </div>
                 </div>
+                
+                <!-- Ad Banner 4 - Inside FAQ Section -->
+                <div class="ad-container ad-banner-inline">
+                    <div class="ad-placeholder">
+                        <span>Advertisement</span>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
+
+    <!-- Ad Banner 5 - Before Footer -->
+    <div class="ad-container ad-banner-bottom">
+        <div class="ad-placeholder">
+            <span>Advertisement</span>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -192,39 +237,46 @@
                         <i class="fab fa-tiktok"></i>
                         <span>TikDown</span>
                     </div>
-                    <p>The fastest and easiest way to download TikTok videos without watermarks.</p>
+                    <p data-i18n="footer.description">The fastest and easiest way to download TikTok videos without watermarks.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Tools</h3>
                     <ul>
-                        <li><a href="index.html">Video Downloader</a></li>
-                        <li><a href="story-downloader.html">Story Downloader</a></li>
-                        <li><a href="slider-downloader.html">Slider Downloader</a></li>
+                        <li><a href="index.html" data-i18n="header.videoDownloader">Video Downloader</a></li>
+                        <li><a href="story-downloader.html" data-i18n="header.storyDownloader">Story Downloader</a></li>
+                        <li><a href="slider-downloader.html" data-i18n="header.sliderDownloader">Slider Downloader</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#how-to-use">How to Use</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq" data-i18n="faq.title">FAQ</a></li>
+                        <li><a href="#how-to-use" data-i18n="howToUse.title">How to Use</a></li>
+                        <li><a href="#contact" data-i18n="footer.links.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
+<<<<<<< HEAD
+                        <li><a href="privacy-policy.html" data-i18n="footer.links.privacy">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" data-i18n="footer.links.terms">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" data-i18n="footer.links.disclaimer">Disclaimer</a></li>
+=======
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-of-service.html">Terms of Service</a></li>
                         <li><a href="disclaimer.html">Disclaimer</a></li>
+>>>>>>> ae056d3512c1a6fecffa07d25dcb651ab7f35657
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 TikDown. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 TikDown. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="languages/language.js"></script>
 </body>
 </html>

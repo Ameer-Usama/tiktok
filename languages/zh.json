@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "视频下载器",
+    "storyDownloader": "故事下载器",
+    "sliderDownloader": "幻灯片下载器"
+  },
+  "hero": {
+    "title": "下载抖音视频",
+    "titleHighlight": "无水印",
+    "description": "免费、快速、易用的抖音视频下载器。以高清质量保存您喜爱的抖音视频，无水印。",
+    "inputPlaceholder": "在此粘贴抖音视频链接...",
+    "downloadButton": "下载",
+    "processing": "正在处理您的视频...",
+    "features": {
+      "noWatermark": "无水印",
+      "hdQuality": "高清质量",
+      "superFast": "超快速",
+      "allDevices": "所有设备"
+    }
+  },
+  "howToUse": {
+    "title": "如何下载抖音视频",
+    "steps": {
+      "step1": {
+        "title": "复制抖音链接",
+        "description": "打开抖音应用，找到您的视频，点击"分享"并复制链接"
+      },
+      "step2": {
+        "title": "粘贴链接",
+        "description": "将抖音视频链接粘贴到上方的下载器中"
+      },
+      "step3": {
+        "title": "下载视频",
+        "description": "点击下载按钮并将视频保存到您的设备"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "questions": {
+      "q1": {
+        "question": "这个抖音下载器是免费使用的吗？",
+        "answer": "是的，我们的抖音视频下载器完全免费。您可以无限下载抖音视频，无需付费或注册。"
+      },
+      "q2": {
+        "question": "我需要安装任何软件吗？",
+        "answer": "无需安装！我们的抖音下载器直接在您的网络浏览器中运行，适用于任何设备 - 桌面电脑、手机或平板电脑。"
+      },
+      "q3": {
+        "question": "我可以下载什么质量的视频？",
+        "answer": "我们的工具为抖音视频提供最佳可能质量，通常为高清(720p)或更高，取决于视频的原始质量。"
+      },
+      "q4": {
+        "question": "如何去除抖音水印？",
+        "answer": "您无需做任何事情！当您下载视频时，我们的工具会自动去除抖音水印。"
+      },
+      "q5": {
+        "question": "我可以在iPhone/安卓设备上下载抖音视频吗？",
+        "answer": "是的，我们的抖音下载器适用于所有带有网络浏览器的设备，包括iPhone、安卓、Windows和Mac。"
+      },
+      "q6": {
+        "question": "有下载限制吗？",
+        "answer": "没有，您可以下载的视频数量没有限制。尽情享受无限下载！"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "免责声明",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "copyright": "© 2023 抖音下载器。保留所有权利。"
+  }
+}

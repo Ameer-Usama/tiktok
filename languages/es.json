@@ -1,0 +1,102 @@
+{
+  "header": {
+    "videoDownloader": "Descargador de Videos",
+    "storyDownloader": "Descargador de Historias",
+    "sliderDownloader": "Descargador de Sliders"
+  },
+  "hero": {
+    "title": "Descargar Videos de TikTok",
+    "titleHighlight": "Sin Marca de Agua",
+    "description": "Descargador de videos de TikTok gratuito, rápido y fácil de usar. Guarda tus videos favoritos de TikTok en calidad HD sin marcas de agua.",
+    "inputPlaceholder": "Pega la URL del video de TikTok aquí...",
+    "downloadButton": "Descargar",
+    "processing": "Procesando tu video...",
+    "features": {
+      "noWatermark": "Sin Marca de Agua",
+      "hdQuality": "Calidad HD",
+      "superFast": "Super Rápido",
+      "allDevices": "Todos los Dispositivos"
+    }
+  },
+  "howToUse": {
+    "title": "Cómo Descargar Videos de TikTok",
+    "steps": {
+      "step1": {
+        "title": "Copiar URL de TikTok",
+        "description": "Abre la aplicación TikTok, encuentra tu video, toca \"Compartir\" y copia el enlace"
+      },
+      "step2": {
+        "title": "Pegar URL",
+        "description": "Pega la URL del video de TikTok en nuestro descargador arriba"
+      },
+      "step3": {
+        "title": "Descargar Video",
+        "description": "Haz clic en el botón de descarga y guarda el video en tu dispositivo"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "questions": {
+      "q1": {
+        "question": "¿Es gratis usar este descargador de TikTok?",
+        "answer": "Sí, nuestro descargador de videos de TikTok es completamente gratuito. Puedes descargar videos ilimitados de TikTok sin ningún cargo o registro requerido."
+      },
+      "q2": {
+        "question": "¿Necesito instalar algún software?",
+        "answer": "¡No se requiere instalación! Nuestro descargador de TikTok funciona directamente en tu navegador web en cualquier dispositivo: computadora, móvil o tableta."
+      },
+      "q3": {
+        "question": "¿Qué calidad de video puedo descargar?",
+        "answer": "Puedes descargar videos de TikTok en calidad HD (hasta 1080p) dependiendo de la calidad original del video subido por el creador."
+      },
+      "q4": {
+        "question": "¿El video descargado tendrá marca de agua?",
+        "answer": "No, nuestro descargador elimina la marca de agua de TikTok, dándote videos limpios sin ninguna marca o logotipo."
+      },
+      "q5": {
+        "question": "¿Es seguro usar este descargador?",
+        "answer": "¡Absolutamente! No almacenamos tus videos ni información personal. El proceso de descarga es seguro y tu privacidad está protegida."
+      }
+    }
+  },
+  "downloadOptions": {
+    "title": "Opciones de Descarga",
+    "option1": "Descargar sin marca de agua",
+    "option2": "Descargar en HD sin marca de agua",
+    "close": "Cerrar"
+  },
+  "notifications": {
+    "enterUrl": "Por favor ingresa una URL de video de TikTok",
+    "validUrl": "Por favor ingresa una URL válida de video de TikTok",
+    "validUrlDetected": "¡URL válida de TikTok detectada!",
+    "downloadStarted": "¡Descarga de video iniciada!",
+    "hdDownloadStarted": "¡Descarga de video HD iniciada!",
+    "downloadError": "Ocurrió un error al descargar el video",
+    "downloadCanceled": "Descarga cancelada"
+  },
+  "ads": {
+    "advertisement": "Publicidad",
+    "secondsRemaining": "segundos restantes",
+    "skipAd": "Saltar Anuncio"
+  },
+  "videoInfo": {
+    "title": "Información del Video",
+    "videoTitle": "Título",
+    "author": "Autor",
+    "duration": "Duración",
+    "quality": "Calidad"
+  },
+  "footer": {
+    "description": "La forma más rápida y fácil de descargar videos de TikTok sin marcas de agua.",
+    "links": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "disclaimer": "Aviso Legal"
+    },
+    "copyright": "© 2023 TikDown. Todos los derechos reservados."
+  }
+}

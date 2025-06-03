@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "動画ダウンローダー",
+    "storyDownloader": "ストーリーダウンローダー",
+    "sliderDownloader": "スライダーダウンローダー"
+  },
+  "hero": {
+    "title": "TikTok動画をダウンロード",
+    "titleHighlight": "透かしなし",
+    "description": "無料、高速、使いやすいTikTok動画ダウンローダー。お気に入りのTikTok動画を透かしなしでHD品質で保存できます。",
+    "inputPlaceholder": "TikTok動画のURLをここに貼り付け...",
+    "downloadButton": "ダウンロード",
+    "processing": "動画を処理中...",
+    "features": {
+      "noWatermark": "透かしなし",
+      "hdQuality": "HD品質",
+      "superFast": "超高速",
+      "allDevices": "すべてのデバイス"
+    }
+  },
+  "howToUse": {
+    "title": "TikTok動画のダウンロード方法",
+    "steps": {
+      "step1": {
+        "title": "TikTok URLをコピー",
+        "description": "TikTokアプリを開き、動画を見つけて、「共有」をタップしてリンクをコピーします"
+      },
+      "step2": {
+        "title": "URLを貼り付け",
+        "description": "TikTok動画のURLを上記のダウンローダーに貼り付けます"
+      },
+      "step3": {
+        "title": "動画をダウンロード",
+        "description": "ダウンロードボタンをクリックして、動画をデバイスに保存します"
+      }
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "questions": {
+      "q1": {
+        "question": "このTikTokダウンローダーは無料で使えますか？",
+        "answer": "はい、当社のTikTok動画ダウンローダーは完全に無料です。料金や登録なしで無制限にTikTok動画をダウンロードできます。"
+      },
+      "q2": {
+        "question": "ソフトウェアをインストールする必要がありますか？",
+        "answer": "インストール不要！当社のTikTokダウンローダーはデスクトップ、モバイル、タブレットなど、どのデバイスでもウェブブラウザで直接動作します。"
+      },
+      "q3": {
+        "question": "どの動画品質でダウンロードできますか？",
+        "answer": "当社のツールはTikTok動画に対して可能な限り最高の品質を提供します。通常はHD（720p）以上で、元の動画の品質によります。"
+      },
+      "q4": {
+        "question": "TikTokの透かしを削除するにはどうすればいいですか？",
+        "answer": "何もする必要はありません！当社のツールは動画をダウンロードする際に自動的にTikTokの透かしを削除します。"
+      },
+      "q5": {
+        "question": "iPhone/Androidデバイスでもダウンロードできますか？",
+        "answer": "はい、当社のTikTokダウンローダーはiPhone、Android、Windows、Macなど、ウェブブラウザを搭載したすべてのデバイスで動作します。"
+      },
+      "q6": {
+        "question": "ダウンロード回数に制限はありますか？",
+        "answer": "いいえ、ダウンロードできる動画の数に制限はありません。無制限のダウンロードをお楽しみください！"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "免責事項",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "copyright": "© 2023 TikTok Downloader. All rights reserved."
+  }
+}

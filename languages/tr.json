@@ -1,0 +1,73 @@
+{
+  "header": {
+    "videoDownloader": "Video İndirici",
+    "storyDownloader": "Hikaye İndirici",
+    "sliderDownloader": "Slider İndirici"
+  },
+  "hero": {
+    "title": "TikTok Videoları İndir",
+    "titleHighlight": "Filigransız",
+    "description": "Ücretsiz, hızlı ve kullanımı kolay TikTok video indirici. Favori TikTok videolarınızı filigransız olarak HD kalitesinde kaydedin.",
+    "inputPlaceholder": "TikTok video URL'sini buraya yapıştırın...",
+    "downloadButton": "İndir",
+    "processing": "Videonuz işleniyor...",
+    "features": {
+      "noWatermark": "Filigran Yok",
+      "hdQuality": "HD Kalite",
+      "superFast": "Süper Hızlı",
+      "allDevices": "Tüm Cihazlar"
+    }
+  },
+  "howToUse": {
+    "title": "TikTok Videoları Nasıl İndirilir",
+    "steps": {
+      "step1": {
+        "title": "TikTok URL'sini Kopyala",
+        "description": "TikTok uygulamasını açın, videonuzu bulun, \"Paylaş\" düğmesine dokunun ve bağlantıyı kopyalayın"
+      },
+      "step2": {
+        "title": "URL'yi Yapıştır",
+        "description": "TikTok video URL'sini yukarıdaki indiricimize yapıştırın"
+      },
+      "step3": {
+        "title": "Videoyu İndir",
+        "description": "İndir düğmesine tıklayın ve videoyu cihazınıza kaydedin"
+      }
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "questions": {
+      "q1": {
+        "question": "Bu TikTok indirici ücretsiz mi?",
+        "answer": "Evet, TikTok video indiricimiz tamamen ücretsizdir. Herhangi bir ücret ödemeden veya kayıt olmadan sınırsız TikTok videosu indirebilirsiniz."
+      },
+      "q2": {
+        "question": "Herhangi bir yazılım yüklemem gerekiyor mu?",
+        "answer": "Kurulum gerekmez! TikTok indiricimiz masaüstü, mobil veya tablet gibi herhangi bir cihazda doğrudan web tarayıcınızda çalışır."
+      },
+      "q3": {
+        "question": "Hangi video kalitesinde indirebilirim?",
+        "answer": "Aracımız, TikTok videoları için mümkün olan en iyi kaliteyi sunar, genellikle HD (720p) veya daha yüksek, videonun orijinal kalitesine bağlı olarak."
+      },
+      "q4": {
+        "question": "TikTok filigranını nasıl kaldırırım?",
+        "answer": "Hiçbir şey yapmanıza gerek yok! Aracımız, bir video indirdiğinizde TikTok filigranını otomatik olarak kaldırır."
+      },
+      "q5": {
+        "question": "iPhone/Android cihazımda TikTok videoları indirebilir miyim?",
+        "answer": "Evet, TikTok indiricimiz iPhone, Android, Windows ve Mac dahil olmak üzere web tarayıcısı olan tüm cihazlarda çalışır."
+      },
+      "q6": {
+        "question": "İndirme limiti var mı?",
+        "answer": "Hayır, indirebileceğiniz video sayısında bir sınır yoktur. Sınırsız indirmenin keyfini çıkarın!"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Yasal Uyarı",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Şartları",
+    "copyright": "© 2023 TikTok Downloader. Tüm hakları saklıdır."
+  }
+}
