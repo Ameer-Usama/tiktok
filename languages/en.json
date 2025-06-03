@@ -2,13 +2,17 @@
   "header": {
     "videoDownloader": "Video Downloader",
     "storyDownloader": "Story Downloader",
-    "sliderDownloader": "Slider Downloader"
+    "sliderDownloader": "Slider Downloader",
+    "douyinDownloader": "Douyin Downloader"
   },
   "hero": {
     "title": "Download TikTok Videos",
     "titleHighlight": "Without Watermark",
     "description": "Free, fast, and easy-to-use TikTok video downloader. Save your favorite TikTok videos in HD quality without watermarks.",
+    "douyinTitle": "Download Douyin Videos",
+    "douyinDescription": "Free, fast, and easy-to-use Douyin video downloader. Save your favorite Douyin videos in HD quality without watermarks.",
     "inputPlaceholder": "Paste TikTok video URL here...",
+    "douyinInputPlaceholder": "Paste Douyin video URL here...",
     "downloadButton": "Download",
     "processing": "Processing your video...",
     "features": {
@@ -20,14 +24,22 @@
   },
   "howToUse": {
     "title": "How to Download TikTok Videos",
+    "douyinTitle": "How to Download Douyin Videos",
     "steps": {
       "step1": {
         "title": "Copy TikTok URL",
         "description": "Open TikTok app, find your video, tap \"Share\" and copy the link"
       },
+      "douyinStep1": {
+        "title": "Copy Douyin URL",
+        "description": "Open Douyin app, find your video, tap \"Share\" and copy the link"
+      },
       "step2": {
         "title": "Paste URL",
         "description": "Paste the TikTok video URL into our downloader above"
+      },
+      "douyinStep2": {
+        "description": "Paste the Douyin video URL into our downloader above"
       },
       "step3": {
         "title": "Download Video",
@@ -42,6 +54,10 @@
         "question": "Is this TikTok downloader free to use?",
         "answer": "Yes, our TikTok video downloader is completely free to use. You can download unlimited TikTok videos without any charges or registration required."
       },
+      "douyinQ1": {
+        "question": "Is this Douyin downloader free to use?",
+        "answer": "Yes, our Douyin video downloader is completely free to use. You can download unlimited Douyin videos without any charges or registration required."
+      },
       "q2": {
         "question": "Do I need to install any software?",
         "answer": "No installation required! Our TikTok downloader works directly in your web browser on any device - desktop, mobile, or tablet."
@@ -50,9 +66,15 @@
         "question": "What video quality can I download?",
         "answer": "You can download TikTok videos in HD quality (up to 1080p) depending on the original video quality uploaded by the creator."
       },
+      "douyinQ3": {
+        "answer": "You can download Douyin videos in HD quality (up to 1080p) depending on the original video quality uploaded by the creator."
+      },
       "q4": {
         "question": "Will the downloaded video have a watermark?",
         "answer": "No, our downloader removes the TikTok watermark, giving you clean videos without any branding or logos."
+      },
+      "douyinQ4": {
+        "answer": "No, our downloader removes the Douyin watermark, giving you clean videos without any branding or logos."
       },
       "q5": {
         "question": "Is it safe to use this downloader?",
@@ -89,6 +111,7 @@
   },
   "footer": {
     "description": "The fastest and easiest way to download TikTok videos without watermarks.",
+    "douyinDescription": "The fastest and easiest way to download Douyin videos without watermarks.",
     "links": {
       "home": "Home",
       "about": "About Us",
