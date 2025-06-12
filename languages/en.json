@@ -22,6 +22,20 @@
       "allDevices": "All Devices"
     }
   },
+  "keyFeatures": {
+    "title": "Key Features of SnapTik",
+    "features": {
+      "removeWatermarks": "Remove Watermarks",
+      "easyToUse": "Easy to Use",
+      "userFriendly": "User-friendly",
+      "fastAndSecure": "Fast and Secure",
+      "highQuality": "High-Quality Results",
+      "complete": "Complete TikTok Downloader",
+      "crossPlatform": "Cross-Platform",
+      "free": "100% Free",
+      "tools": "SnapTik Downloading Tools"
+    }
+  },
   "howToUse": {
     "title": "How to Download TikTok Videos",
     "douyinTitle": "How to Download Douyin Videos",
@@ -81,6 +95,19 @@
         "answer": "Absolutely! We don't store your videos or personal information. The download process is secure and your privacy is protected."
       }
     }
+  },
+  "appDownload": {
+    "title": "Download SnapTik App",
+    "description": "Need a faster and easier approach to TikTok Video downloads? Download the application on your device. It is smooth, fast, easy, no-watermark, and HD quality. Enjoy it anytime and anywhere.",
+    "android": {
+      "title": "For Android",
+      "description": "Click on the Google Play Store icon to download and directly install SnapTik TT video downloader on your device. Now only need to paste the TikTok video link to download the video without a watermark."
+    },
+    "ios": {
+      "title": "For iOS",
+      "description": "iPhone and iPad users can also download the app on their devices by clicking on the App Store button. Now start saving your favorite videos without needing a login or subscription."
+    },
+    "downloadButton": "Download Now"
   },
   "downloadOptions": {
     "title": "Download Options",
