@@ -172,6 +172,9 @@ const countryToLanguage = {
   'HK': 'zh', // Hong Kong
   'MO': 'zh', // Macau
   'SG': 'zh', // Singapore (partial)
+  
+  // Hindi speaking regions
+  'IN': 'hi', // India
 };
 
 // Available languages
@@ -198,6 +201,7 @@ const availableLanguages = {
   'el': 'Ελληνικά',
   'ru': 'Русский',
   'ko': '한국어',
+  'hi': 'हिन्दी',
   'jv': 'Basa Jawa',
   'zh': '中文'
 };

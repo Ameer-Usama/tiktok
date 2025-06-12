@@ -2,13 +2,20 @@
   "header": {
     "videoDownloader": "Tải Video",
     "storyDownloader": "Tải Story",
-    "sliderDownloader": "Tải Slider"
+    "sliderDownloader": "Tải Slider",
+    "douyinDownloader": "Tải Douyin"
   },
   "hero": {
     "title": "Tải Video TikTok",
     "titleHighlight": "Không Có Watermark",
+    "subtitle": "Tải Video TikTok Không Có Watermark Miễn Phí",
     "description": "Công cụ tải video TikTok miễn phí, nhanh chóng và dễ sử dụng. Lưu các video TikTok yêu thích của bạn với chất lượng HD mà không có watermark.",
+    "douyinTitle": "Tải Video Douyin",
+    "douyinDescription": "Công cụ tải video Douyin miễn phí, nhanh chóng và dễ sử dụng. Lưu các video Douyin yêu thích của bạn với chất lượng HD mà không có watermark.",
+    "extendedDescription1": "Hàng triệu người dùng TikTok đều nhận thức được tầm quan trọng của công cụ Tải Video TikTok. Khi người dùng tìm kiếm một cách an toàn để tải video TikTok, những câu hỏi xuất hiện trong đầu là: Có an toàn để sử dụng không? Miễn phí hay phải trả phí? Tôi có thể tải video mà không có watermark không? SnapTik là một công cụ tải TikTok miễn phí không có watermark. Bạn không cần cài đặt ứng dụng hoặc tạo tài khoản. Chỉ cần dán liên kết video của bạn vào trang web của chúng tôi. Sau đó, tải xuống video TikTok không có watermark theo định dạng bạn muốn, như MP4, HD, Full HD, hoặc thậm chí là MP3.",
+    "extendedDescription2": "Nền tảng này tuyệt vời và nổi tiếng với các bản tải xuống chất lượng cao, kết quả nhanh chóng, không tốn phí, không gián đoạn và không cần đăng ký. Bạn nên thử SnapTik để tải xuống các video TikTok, hình ảnh, câu chuyện, trình chiếu và MP3 yêu thích của bạn chỉ với một cú nhấp chuột.",
     "inputPlaceholder": "Dán URL video TikTok vào đây...",
+    "douyinInputPlaceholder": "Dán URL video Douyin vào đây...",
     "downloadButton": "Tải Xuống",
     "processing": "Đang xử lý video của bạn...",
     "features": {
@@ -18,20 +25,93 @@
       "allDevices": "Mọi Thiết Bị"
     }
   },
+  "keyFeatures": {
+    "title": "Tính Năng Chính",
+    "description": "Khám phá những tính năng mạnh mẽ của SnapTik",
+    "features": {
+      "q1": {
+        "title": "Tải Video TikTok Không Có Watermark",
+        "description": "Tải video TikTok mà không có logo watermark của TikTok."
+      },
+      "q2": {
+        "title": "Tải Video TikTok HD",
+        "description": "Tải video TikTok với chất lượng HD cao nhất."
+      },
+      "q3": {
+        "title": "Tải Video TikTok MP3",
+        "description": "Tải âm thanh từ video TikTok ở định dạng MP3."
+      },
+      "q4": {
+        "title": "Tải Video TikTok MP4",
+        "description": "Tải video TikTok ở định dạng MP4 chất lượng cao."
+      },
+      "removeWatermarks": "Xóa Watermark",
+      "removeWatermarksDesc": "Tải video TikTok mà không có logo watermark, cho phép bạn chia sẻ nội dung sạch.",
+      "easyToUse": "Dễ Sử Dụng",
+      "easyToUseDesc": "Giao diện đơn giản, chỉ cần dán liên kết và nhấp vào nút tải xuống.",
+      "userFriendly": "Thân Thiện Với Người Dùng",
+      "userFriendlyDesc": "Được thiết kế để mọi người dùng đều có thể sử dụng dễ dàng, không cần kiến thức kỹ thuật.",
+      "fastAndSecure": "Nhanh và An Toàn",
+      "fastAndSecureDesc": "Tải xuống nhanh chóng và an toàn, không có phần mềm độc hại hoặc quảng cáo xâm phạm.",
+      "highQuality": "Kết Quả Chất Lượng Cao",
+      "highQualityDesc": "Tải xuống video với chất lượng cao nhất có sẵn, bao gồm HD và 4K.",
+      "complete": "Trình Tải TikTok Đầy Đủ",
+      "completeDesc": "Tải xuống tất cả các loại bài đăng, chẳng hạn như: Ảnh, Video, Trình chiếu, v.v.",
+      "crossPlatform": "Đa Nền Tảng",
+      "crossPlatformDesc": "Bạn có thể sử dụng nó trên bất kỳ trình duyệt hoặc phần mềm nào trên thiết bị Android. Nhưng TikTok chỉ cho phép ứng dụng tải xuống video.",
+      "free": "Hoàn Toàn Miễn Phí",
+      "freeDesc": "Đây là công cụ tải xuống video TikTok không có watermark miễn phí. Chúng tôi chỉ đặt một vài quảng cáo để quản lý công cụ. Quyền riêng tư và dữ liệu của người dùng vẫn hoàn toàn an toàn.",
+      "tools": "Công Cụ Tải Xuống SnapTik",
+      "toolsDesc": "Người dùng TikTok có thể tải xuống trình chiếu ảnh dưới dạng video MP4. SnapTik tự kết hợp hình ảnh và âm thanh thành một video hoàn chỉnh.",
+      "allContentTypes": "Tất Cả Các Loại Nội Dung",
+      "allContentTypesDesc": "SnapTik tải xuống tất cả các loại nội dung TikTok, bao gồm video, ảnh, trình chiếu và âm thanh ở nhiều định dạng khác nhau.",
+      "multipleFormats": "Nhiều Định Dạng",
+      "multipleFormatsDesc": "Tải xuống ở định dạng MP4, HD, Full HD, 1080p và thậm chí cả MP3 theo yêu cầu của bạn. Các nền tảng khác hỗ trợ các định dạng hạn chế."
+    }
+  },
   "howToUse": {
     "title": "Cách Tải Video TikTok",
+    "douyinTitle": "Cách Tải Video Douyin",
+    "description": "Công cụ tải TikTok nhanh chóng và thân thiện với người dùng. Tại đây, bạn có thể dễ dàng tải xuống video và hình ảnh. Chỉ cần làm theo các bước sau để lưu video mà không có watermark.",
     "steps": {
       "step1": {
         "title": "Sao chép URL TikTok",
-        "description": "Mở ứng dụng TikTok, tìm video của bạn, nhấn \"Chia sẻ\" và sao chép liên kết"
+        "description": "Mở ứng dụng TikTok, tìm video của bạn, nhấn \"Chia sẻ\" và sao chép liên kết",
+        "list": {
+          "item1": "Đầu tiên, mở TikTok trên thiết bị của bạn",
+          "item2": "Chọn bài đăng yêu thích của bạn, như video, hình ảnh, câu chuyện hoặc trình chiếu",
+          "item3": "Nhấp vào nút \"Chia sẻ\" ở góc dưới bên phải",
+          "item4": "Sau đó nhấn vào nút \"Sao chép\" để sao chép liên kết",
+          "item5": "Bây giờ liên kết đã được sao chép thành công"
+        }
+      },
+      "douyinStep1": {
+        "title": "Sao chép URL Douyin",
+        "description": "Mở ứng dụng Douyin, tìm video của bạn, nhấn \"Chia sẻ\" và sao chép liên kết"
       },
       "step2": {
         "title": "Dán URL",
-        "description": "Dán URL video TikTok vào công cụ tải xuống ở trên"
+        "description": "Dán URL video TikTok vào công cụ tải xuống ở trên",
+        "list": {
+          "item1": "Mở trang web SnapTik",
+          "item2": "Dán URL đã sao chép vào ô tìm kiếm",
+          "item3": "Nhấp vào nút \"Tải Xuống\""
+        }
+      },
+      "douyinStep2": {
+        "description": "Dán URL video Douyin vào công cụ tải xuống ở trên"
       },
       "step3": {
         "title": "Tải Video",
         "description": "Nhấn nút tải xuống và lưu video vào thiết bị của bạn"
+      },
+      "step4": {
+        "title": "Tải Xuống Video Của Bạn",
+        "list": {
+          "item1": "Khi bạn đã chọn định dạng video",
+          "item2": "Quá trình tải xuống sẽ tự động bắt đầu"
+        },
+        "description": "Bạn sẽ nhận được video không có watermark một cách nhanh chóng"
       }
     }
   },
@@ -42,6 +122,10 @@
         "question": "Công cụ tải TikTok này có miễn phí không?",
         "answer": "Có, công cụ tải video TikTok của chúng tôi hoàn toàn miễn phí. Bạn có thể tải xuống không giới hạn video TikTok mà không cần trả phí hoặc đăng ký."
       },
+      "douyinQ1": {
+        "question": "Công cụ tải Douyin này có miễn phí không?",
+        "answer": "Có, công cụ tải video Douyin của chúng tôi hoàn toàn miễn phí. Bạn có thể tải xuống không giới hạn video Douyin mà không cần trả phí hoặc đăng ký."
+      },
       "q2": {
         "question": "Tôi có cần cài đặt phần mềm nào không?",
         "answer": "Không cần cài đặt! Công cụ tải TikTok của chúng tôi hoạt động trực tiếp trong trình duyệt web của bạn trên bất kỳ thiết bị nào - máy tính để bàn, di động hoặc máy tính bảng."
@@ -50,24 +134,175 @@
         "question": "Tôi có thể tải xuống video với chất lượng nào?",
         "answer": "Công cụ của chúng tôi cung cấp chất lượng tốt nhất có thể cho video TikTok, thường là HD (720p) hoặc cao hơn, tùy thuộc vào chất lượng gốc của video."
       },
+      "douyinQ3": {
+        "answer": "Công cụ của chúng tôi cung cấp chất lượng tốt nhất có thể cho video Douyin, thường là HD (720p) hoặc cao hơn, tùy thuộc vào chất lượng gốc của video."
+      },
       "q4": {
         "question": "Làm thế nào để xóa watermark TikTok?",
         "answer": "Bạn không cần làm gì cả! Công cụ của chúng tôi tự động xóa watermark TikTok khi bạn tải xuống video."
+      },
+      "douyinQ4": {
+        "answer": "Bạn không cần làm gì cả! Công cụ của chúng tôi tự động xóa watermark Douyin khi bạn tải xuống video."
       },
       "q5": {
         "question": "Tôi có thể tải video TikTok trên iPhone/thiết bị Android không?",
         "answer": "Có, công cụ tải TikTok của chúng tôi hoạt động trên tất cả các thiết bị có trình duyệt web, bao gồm iPhone, Android, Windows và Mac."
       },
+      "q5_safety": {
+        "question": "Có an toàn khi sử dụng công cụ tải này không?",
+        "answer": "Hoàn toàn! Chúng tôi không lưu trữ video hoặc thông tin cá nhân của bạn. Quá trình tải xuống an toàn và quyền riêng tư của bạn được bảo vệ."
+      },
       "q6": {
+        "question": "Mục đích chính của SnapTik là gì?",
+        "answer": "Mục đích cơ bản của nó là tải xuống video TikTok mà không có watermark. Người dùng sao chép liên kết video TikTok và dán chúng vào công cụ web để có kết quả chất lượng cao."
+      },
+      "q7": {
+        "question": "SnapTik có xóa watermark không?",
+        "answer": "Đây là một công cụ tải video TikTok phổ biến cho phép người dùng xóa watermark. Bạn có thể tải xuống trình chiếu, hình ảnh và câu chuyện TikTok mà không có watermark."
+      },
+      "q8": {
+        "question": "SnapTik tính phí bao nhiêu?",
+        "answer": "Nó cung cấp tất cả các tính năng miễn phí. Nó chạy quảng cáo trên trang web và ứng dụng SnapTik để duy trì hệ thống của mình."
+      },
+      "q9": {
+        "question": "Video TikTok được lưu trữ ở đâu sau khi bạn tải xuống?",
+        "answer": "Video đã tải xuống được lưu trong thư mục mặc định. Bạn có thể chọn thư mục mặc định theo ý muốn. Từ cài đặt trình duyệt, người dùng có thể chọn thư mục mặc định. Người dùng có thể thay đổi thư mục bất cứ lúc nào."
+      },
+      "q10": {
+        "question": "Tôi có thể tải xuống video TikTok mà không có watermark miễn phí không?",
+        "answer": "Có, Snap TikTok Downloader hoàn toàn miễn phí. Bạn có thể sử dụng tất cả các tính năng mà không cần thanh toán."
+      },
+      "q11": {
+        "question": "Tôi có thể sử dụng SnapTik TikTok Video Downloader trên điện thoại Android của tôi không?",
+        "answer": "Có, người dùng Android có thể sử dụng trang web và ứng dụng SnapTik trên thiết bị của họ. Công cụ tải TikTok này an toàn, miễn phí và nhanh chóng. Bạn có thể nhận được kết quả chất lượng cao mà không có watermark."
+      },
+      "q12": {
+        "question": "SnapTik có giới hạn tải xuống video TikTok không?",
+        "answer": "Không có giới hạn nào trên công cụ tải TikTok này. Bạn có thể tải xuống không giới hạn video 100% miễn phí và an toàn."
+      },
+      "q13": {
+        "question": "Tôi có cần cài đặt ứng dụng hoặc tiện ích mở rộng không?",
+        "answer": "Không, bạn không cần cài đặt bất kỳ ứng dụng hoặc tiện ích mở rộng nào để sử dụng SnapTik. Nó là một công cụ trực tuyến hoạt động trực tiếp trong trình duyệt web của bạn."
+      },
+      "q16": {
         "question": "Có giới hạn tải xuống không?",
         "answer": "Không, không có giới hạn số lượng video bạn có thể tải xuống. Hãy tận hưởng việc tải xuống không giới hạn!"
       }
     }
   },
+  "appDownload": {
+    "title": "Tải Ứng Dụng SnapTik",
+    "description": "Cần cách nhanh hơn và dễ dàng hơn để tải video TikTok? Hãy tải ứng dụng về thiết bị của bạn. Nó mượt mà, nhanh chóng, dễ sử dụng, không có watermark và chất lượng HD. Tận hưởng bất cứ lúc nào và ở bất cứ đâu.",
+    "android": {
+      "title": "Cho Android",
+      "description": "Nhấp vào biểu tượng Google Play Store để tải xuống và cài đặt trực tiếp ứng dụng tải video SnapTik TT trên thiết bị của bạn. Bây giờ chỉ cần dán liên kết video TikTok để tải xuống video mà không có watermark."
+    },
+    "ios": {
+      "title": "Cho iOS",
+      "description": "Người dùng iPhone và iPad cũng có thể tải ứng dụng về thiết bị của họ bằng cách nhấp vào nút App Store. Bây giờ bắt đầu lưu các video yêu thích của bạn mà không cần đăng nhập hoặc đăng ký."
+    },
+    "downloadButton": "Tải Ngay"
+  },
+  "downloadOptions": {
+    "title": "Tùy Chọn Tải Xuống",
+    "option1": "Tải xuống không có watermark",
+    "option2": "Tải xuống HD không có watermark",
+    "close": "Đóng"
+  },
+  "notifications": {
+    "enterUrl": "Vui lòng nhập URL video TikTok",
+    "validUrl": "Vui lòng nhập URL video TikTok hợp lệ",
+    "validUrlDetected": "Đã phát hiện URL TikTok hợp lệ!",
+    "downloadStarted": "Bắt đầu tải xuống video!",
+    "hdDownloadStarted": "Bắt đầu tải xuống video HD!",
+    "downloadError": "Đã xảy ra lỗi khi tải xuống video",
+    "downloadCanceled": "Đã hủy tải xuống"
+  },
+  "ads": {
+    "advertisement": "Quảng cáo",
+    "secondsRemaining": "giây còn lại",
+    "skipAd": "Bỏ qua quảng cáo"
+  },
+  "videoInfo": {
+    "title": "Thông Tin Video",
+    "videoTitle": "Tiêu đề",
+    "author": "Tác giả",
+    "duration": "Thời lượng",
+    "quality": "Chất lượng"
+  },
+  "prosCons": {
+    "title": "Ưu Điểm và Nhược Điểm",
+    "description": "Hiểu rõ về những ưu điểm và nhược điểm của SnapTik",
+    "pros": {
+      "noWatermark": "Không Watermark",
+      "noWatermarkDesc": "Tải xuống video TikTok mà không có logo watermark của TikTok.",
+      "free": "Hoàn Toàn Miễn Phí",
+      "freeDesc": "Sử dụng tất cả các tính năng mà không cần trả phí hoặc đăng ký.",
+      "fastEasy": "Nhanh và Dễ Dàng",
+      "fastEasyDesc": "Giao diện đơn giản và quá trình tải xuống nhanh chóng.",
+      "fastProcessing": "Xử Lý Nhanh",
+      "fastProcessingDesc": "Tải xuống video của bạn trong vài giây.",
+      "noRegistration": "Không Cần Đăng Ký",
+      "noRegistrationDesc": "Không cần tạo tài khoản hoặc đăng nhập.",
+      "multipleFormats": "Nhiều Định Dạng",
+      "multipleFormatsDesc": "Tải xuống video ở nhiều định dạng khác nhau, bao gồm MP4, HD và MP3."
+    },
+    "cons": {
+      "internetRequired": "Yêu Cầu Internet",
+      "internetRequiredDesc": "Cần kết nối internet để sử dụng dịch vụ.",
+      "singleDownloads": "Tải Xuống Đơn Lẻ",
+      "singleDownloadsDesc": "Chỉ có thể tải xuống một video mỗi lần.",
+      "noEditing": "Không Có Chỉnh Sửa",
+      "noEditingDesc": "Không có tính năng chỉnh sửa video sau khi tải xuống.",
+      "notAffiliated": "Không Liên Kết",
+      "notAffiliatedDesc": "SnapTik không liên kết với TikTok hoặc ByteDance."
+    }
+  },
+  "exploreTools": {
+    "title": "Khám Phá Thêm Công Cụ Tải TikTok",
+    "description": "Khám phá các công cụ tải xuống TikTok khác của chúng tôi",
+    "tools": {
+      "douyin": {
+        "title": "Trình Tải Video Douyin",
+        "description": "Tải video Douyin không có watermark",
+        "button": "Dùng Ngay"
+      },
+      "story": {
+        "title": "Trình Tải Story TikTok",
+        "description": "Tải story TikTok không có watermark",
+        "button": "Dùng Ngay"
+      },
+      "slide": {
+        "title": "Trình Tải Slide TikTok",
+        "description": "Tải slide TikTok không có watermark",
+        "button": "Dùng Ngay"
+      }
+    }
+  },
   "footer": {
+    "about": {
+      "title": "Về SnapTik",
+      "whyBest": "Tại Sao SnapTik Là Tốt Nhất",
+      "safety": "An Toàn & Bảo Mật",
+      "tips": "Mẹo TikTok",
+      "prosCons": "Ưu Điểm & Nhược Điểm"
+    },
+    "description": "Cách nhanh nhất và dễ dàng nhất để tải video TikTok không có watermark.",
+    "douyinDescription": "Cách nhanh nhất và dễ dàng nhất để tải video Douyin không có watermark.",
+    "links": {
+      "home": "Trang chủ",
+      "about": "Về chúng tôi",
+      "contact": "Liên hệ",
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản dịch vụ",
+      "disclaimer": "Tuyên bố miễn trừ"
+    },
+    "legal": {
+      "title": "Pháp lý"
+    },
     "disclaimer": "Tuyên Bố Miễn Trừ",
     "privacyPolicy": "Chính Sách Bảo Mật",
     "termsOfService": "Điều Khoản Dịch Vụ",
-    "copyright": "© 2023 TikTok Downloader. Tất cả quyền được bảo lưu."
+    "copyright": "© 2023 TikDown. Tất cả quyền được bảo lưu."
   }
 }

@@ -2,13 +2,20 @@
   "header": {
     "videoDownloader": "Descargador de Videos",
     "storyDownloader": "Descargador de Historias",
-    "sliderDownloader": "Descargador de Sliders"
+    "sliderDownloader": "Descargador de Sliders",
+    "douyinDownloader": "Descargador de Douyin"
   },
   "hero": {
     "title": "Descargar Videos de TikTok",
     "titleHighlight": "Sin Marca de Agua",
+    "subtitle": "Descarga Videos de TikTok Gratis Sin Marca de Agua",
     "description": "Descargador de videos de TikTok gratuito, rápido y fácil de usar. Guarda tus videos favoritos de TikTok en calidad HD sin marcas de agua.",
+    "extendedDescription1": "Millones de usuarios de TikTok conocen la importancia de un Descargador de Videos de TikTok. Cuando un usuario busca una forma segura de descargar un video de TikTok, las preguntas que surgen son: ¿Es seguro de usar? ¿Es gratis o de pago? ¿Puedo descargar videos sin marca de agua? SnapTik es un descargador de TikTok gratuito sin marcas de agua. No necesitas instalar la aplicación ni crear una cuenta. Simplemente pega el enlace de tu video en nuestro sitio web. Luego, descarga videos de TikTok sin marcas de agua en tu formato preferido, como MP4, HD, Full HD o incluso MP3.",
+    "extendedDescription2": "Esta plataforma es fabulosa y famosa por sus descargas de alta calidad, resultados rápidos, sin costo, sin interrupciones y sin registro. Debes probar SnapTik para descargar tus videos, fotos, historias, presentaciones de diapositivas y MP3 favoritos de TikTok con un solo clic.",
+    "douyinTitle": "Descargar Videos de Douyin",
+    "douyinDescription": "Descargador de videos de Douyin gratuito, rápido y fácil de usar. Guarda tus videos favoritos de Douyin en calidad HD sin marcas de agua.",
     "inputPlaceholder": "Pega la URL del video de TikTok aquí...",
+    "douyinInputPlaceholder": "Pega la URL del video de Douyin aquí...",
     "downloadButton": "Descargar",
     "processing": "Procesando tu video...",
     "features": {
@@ -18,29 +25,87 @@
       "allDevices": "Todos los Dispositivos"
     }
   },
+  "keyFeatures": {
+    "title": "Características Principales de SnapTik",
+    "description": "El descargador de TikTok ofrece una variedad de características que lo hacen atractivo y efectivo para millones de usuarios de TikTok.",
+    "features": {
+      "removeWatermarks": "Eliminar Marcas de Agua",
+      "removeWatermarksDesc": "SnapTik es un popular descargador de TikTok sin marcas de agua. Esta es una característica única que otros descargadores no tienen.",
+      "easyToUse": "Fácil de Usar",
+      "easyToUseDesc": "Fácil de usar. Solo necesitas tener enlaces de videos de TikTok para pegar en el cuadro de búsqueda. El descargador de videos de TikTok hará todo lo demás.",
+      "userFriendly": "Amigable para el Usuario",
+      "userFriendlyDesc": "El descargador de TikTok SnapTik tiene una interfaz amigable para el usuario. Hay un cuadro de búsqueda donde debes pegar el enlace del video de TikTok y presionar el botón de descarga para completar tu tarea.",
+      "fastAndSecure": "Rápido y Seguro",
+      "fastAndSecureDesc": "El Descargador de TikTok proporciona servicios rápidos y seguros. No es necesario crear una cuenta o iniciar sesión. Simplemente pega el enlace del video y descarga videos de TikTok rápidamente.",
+      "highQuality": "Resultados de Alta Calidad",
+      "highQualityDesc": "Los usuarios pueden descargar videos de TikTok y Douyin de la más alta calidad, como: MP4, HD, Full HD.",
+      "complete": "Descargador Completo de TikTok",
+      "completeDesc": "Descarga todo tipo de publicaciones, como: Fotos, Videos, Presentaciones de diapositivas, etc.",
+      "crossPlatform": "Multiplataforma",
+      "crossPlatformDesc": "Puedes usarlo en cualquier navegador o software en dispositivos Android. Pero TikTok solo permite que la aplicación descargue videos.",
+      "free": "100% Gratis",
+      "freeDesc": "Esta es una herramienta gratuita para descargar videos de TikTok sin marca de agua. Solo colocamos algunos anuncios para la gestión de la herramienta. La privacidad y los datos del usuario permanecen completamente seguros.",
+      "tools": "Herramientas de Descarga de SnapTik",
+      "toolsDesc": "Los usuarios de TikTok pueden descargar la presentación de diapositivas de fotos como un video MP4. SnapTik combina imágenes y audio en un video completo."
+    }
+  },
   "howToUse": {
     "title": "Cómo Descargar Videos de TikTok",
+    "description": "El Descargador de TikTok es rápido y fácil de usar. Aquí, puedes descargar fácilmente videos y fotos. Solo sigue estos pasos para guardar videos sin marca de agua.",
+    "douyinTitle": "Cómo Descargar Videos de Douyin",
     "steps": {
       "step1": {
-        "title": "Copiar URL de TikTok",
-        "description": "Abre la aplicación TikTok, encuentra tu video, toca \"Compartir\" y copia el enlace"
+        "title": "Copiar Enlace de TikTok",
+        "description": "Abre la aplicación TikTok, encuentra tu video, toca \"Compartir\" y copia el enlace",
+        "list": {
+          "item1": "Primero, abre TikTok en tu dispositivo",
+          "item2": "Selecciona tu publicación favorita, como un video, foto, historia o presentación de diapositivas",
+          "item3": "Haz clic en el botón \"Compartir\" presente en la parte inferior derecha",
+          "item4": "Luego toca el botón \"Copiar\" para copiar el enlace",
+          "item5": "Ahora el enlace se ha copiado correctamente"
+        }
+      },
+      "douyinStep1": {
+        "title": "Copiar URL de Douyin",
+        "description": "Abre la aplicación Douyin, encuentra tu video, toca \"Compartir\" y copia el enlace"
       },
       "step2": {
-        "title": "Pegar URL",
-        "description": "Pega la URL del video de TikTok en nuestro descargador arriba"
+        "title": "Pegar el Enlace Copiado",
+        "description": "Pega la URL del video de TikTok en nuestro descargador arriba",
+        "list": {
+          "item1": "Abre el sitio web de SnapTik",
+          "item2": "Pega la URL copiada en el cuadro de búsqueda",
+          "item3": "Haz clic en el botón \"Descargar\""
+        }
+      },
+      "douyinStep2": {
+        "description": "Pega la URL del video de Douyin en nuestro descargador arriba"
       },
       "step3": {
-        "title": "Descargar Video",
-        "description": "Haz clic en el botón de descarga y guarda el video en tu dispositivo"
+        "title": "Selecciona Tu Formato",
+        "description": "Una vez que se complete el proceso de carga del video, verás varios formatos, incluidos MP4, HD y MP3. Selecciona tu calidad y formato preferidos."
+      },
+      "step4": {
+        "title": "Descarga Tu Video",
+        "description": "Obtendrás videos sin marca de agua rápidamente",
+        "list": {
+          "item1": "Una vez que selecciones el formato del video",
+          "item2": "El proceso de descarga comenzará automáticamente"
+        }
       }
     }
   },
   "faq": {
     "title": "Preguntas Frecuentes",
+    "description": "Encuentra respuestas a preguntas comunes sobre el uso de SnapTik para descargar videos de TikTok sin marcas de agua.",
     "questions": {
       "q1": {
         "question": "¿Es gratis usar este descargador de TikTok?",
         "answer": "Sí, nuestro descargador de videos de TikTok es completamente gratuito. Puedes descargar videos ilimitados de TikTok sin ningún cargo o registro requerido."
+      },
+      "douyinQ1": {
+        "question": "¿Es gratis usar este descargador de Douyin?",
+        "answer": "Sí, nuestro descargador de videos de Douyin es completamente gratuito. Puedes descargar videos ilimitados de Douyin sin ningún cargo o registro requerido."
       },
       "q2": {
         "question": "¿Necesito instalar algún software?",
@@ -50,15 +115,74 @@
         "question": "¿Qué calidad de video puedo descargar?",
         "answer": "Puedes descargar videos de TikTok en calidad HD (hasta 1080p) dependiendo de la calidad original del video subido por el creador."
       },
+      "douyinQ3": {
+        "answer": "Puedes descargar videos de Douyin en calidad HD (hasta 1080p) dependiendo de la calidad original del video subido por el creador."
+      },
       "q4": {
         "question": "¿El video descargado tendrá marca de agua?",
         "answer": "No, nuestro descargador elimina la marca de agua de TikTok, dándote videos limpios sin ninguna marca o logotipo."
       },
+      "douyinQ4": {
+        "answer": "No, nuestro descargador elimina la marca de agua de Douyin, dándote videos limpios sin ninguna marca o logotipo."
+      },
       "q5": {
         "question": "¿Es seguro usar este descargador?",
         "answer": "¡Absolutamente! No almacenamos tus videos ni información personal. El proceso de descarga es seguro y tu privacidad está protegida."
+      },
+      "q6": {
+        "question": "¿Qué es SnapTik?",
+        "answer": "SnapTik es una herramienta en línea gratuita que te permite descargar videos de TikTok sin marcas de agua. Está diseñada para ser rápida, segura y fácil de usar."
+      },
+      "q7": {
+        "question": "¿Puedo descargar videos de TikTok en mi teléfono?",
+        "answer": "Sí, SnapTik funciona en todos los dispositivos, incluidos teléfonos inteligentes, tabletas y computadoras. Nuestro diseño responsivo garantiza una experiencia fluida en cualquier tamaño de pantalla."
+      },
+      "q8": {
+        "question": "¿Es legal descargar videos de TikTok?",
+        "answer": "Descargar videos para uso personal generalmente es aceptable. Sin embargo, respeta los derechos de autor y no redistribuyas contenido sin permiso del creador original."
+      },
+      "q9": {
+        "question": "¿Por qué debería eliminar la marca de agua de los videos de TikTok?",
+        "answer": "Eliminar las marcas de agua te proporciona videos más limpios para colecciones personales o para crear compilaciones de uso personal sin elementos de marca distractores."
+      },
+      "q10": {
+        "question": "¿Dónde se almacenan los videos descargados?",
+        "answer": "Los videos descargados se guardan directamente en la ubicación de descarga predeterminada de tu dispositivo o donde elijas guardarlos. No almacenamos copias en nuestros servidores."
+      },
+      "q11": {
+        "question": "¿Hay un límite de cuántos videos puedo descargar?",
+        "answer": "No, no hay límite en la cantidad de videos de TikTok que puedes descargar usando SnapTik. Descarga tantos como quieras, completamente gratis."
+      },
+      "q12": {
+        "question": "¿Puedo descargar videos privados de TikTok?",
+        "answer": "No, SnapTik solo puede descargar videos de TikTok disponibles públicamente. Los videos privados están protegidos por la configuración de privacidad de TikTok y no se pueden acceder."
+      },
+      "q13": {
+        "question": "¿Cómo copio la URL de un video de TikTok?",
+        "answer": "Abre la aplicación TikTok, encuentra el video que deseas descargar, toca el botón de compartir (icono de flecha), luego selecciona 'Copiar enlace' de las opciones para compartir."
+      },
+      "q14": {
+        "question": "¿Por qué no funciona la descarga?",
+        "answer": "Esto podría deberse a un problema temporal. Intenta actualizar la página, verificar tu conexión a Internet o usar un navegador diferente. Si el problema persiste, es posible que el video sea privado o haya sido eliminado."
+      },
+      "q15": {
+        "question": "¿Puedo descargar presentaciones de diapositivas e historias de TikTok?",
+        "answer": "Sí, SnapTik admite la descarga de todo tipo de contenido de TikTok, incluidos videos, presentaciones de diapositivas e historias sin marcas de agua."
       }
     }
+  },
+  "appDownload": {
+    "title": "Descargar la Aplicación SnapTik",
+    "description": "¿Necesitas una forma más rápida y fácil de descargar videos de TikTok? Descarga la aplicación en tu dispositivo. Es fluida, rápida, fácil, sin marca de agua y de calidad HD. Disfrútala en cualquier momento y en cualquier lugar.",
+    "android": {
+      "title": "Para Android",
+      "description": "Haz clic en el icono de Google Play Store para descargar e instalar directamente el descargador de videos SnapTik TT en tu dispositivo. Ahora solo necesitas pegar el enlace del video de TikTok para descargar el video sin marca de agua."
+    },
+    "ios": {
+      "title": "Para iOS",
+      "description": "Los usuarios de iPhone y iPad también pueden descargar la aplicación en sus dispositivos haciendo clic en el botón de App Store. Ahora comienza a guardar tus videos favoritos sin necesidad de iniciar sesión o suscripción."
+    },
+    "downloadButton": "Descargar Ahora"
   },
   "downloadOptions": {
     "title": "Opciones de Descarga",
@@ -87,8 +211,103 @@
     "duration": "Duración",
     "quality": "Calidad"
   },
+  "whySnaptik": {
+    "title": "Por Qué SnapTik Es El Mejor",
+    "description": "SnapTik ofrece la experiencia de descarga de videos de TikTok más confiable y fácil de usar disponible en línea.",
+    "features": {
+      "noLogin": "No Requiere Inicio de Sesión",
+      "noLoginDesc": "Descarga videos de TikTok sin crear una cuenta o iniciar sesión. Solo pega la URL y descarga.",
+      "allContentTypes": "Todos los Tipos de Contenido",
+      "allContentTypesDesc": "Descarga cualquier tipo de contenido de TikTok, incluidos videos, presentaciones de diapositivas, historias y más.",
+      "multipleFormats": "Múltiples Formatos",
+      "multipleFormatsDesc": "Elige entre varios formatos de descarga, incluidos MP4, HD e incluso extracción de audio MP3.",
+      "noWatermark": "Sin Marca de Agua",
+      "noWatermarkDesc": "Obtén videos limpios sin la marca de agua de TikTok para uso personal y colecciones.",
+      "privacyProtected": "Privacidad Protegida",
+      "privacyProtectedDesc": "No almacenamos tus videos ni información personal. Tu privacidad es nuestra prioridad."
+    }
+  },
+  "safety": {
+    "title": "Seguridad & Protección",
+    "description": "SnapTik prioriza tu seguridad y protección al descargar videos de TikTok.",
+    "features": {
+      "secureDownloads": "Descargas Seguras",
+      "secureDownloadsDesc": "Todas las descargas se procesan a través de conexiones seguras para proteger tus datos.",
+      "noMalware": "Sin Malware",
+      "noMalwareDesc": "Nuestra herramienta basada en web está libre de malware, virus y otro software dañino.",
+      "browserFreshness": "Frescura del Navegador",
+      "browserFreshnessDesc": "No es necesario instalar nada - funciona directamente en tu navegador para máxima seguridad.",
+      "securePlatforms": "Plataformas Seguras",
+      "securePlatformsDesc": "Compatible con todos los navegadores y plataformas seguros para descargas seguras."
+    }
+  },
+  "tiktokTips": {
+    "title": "Consejos y Trucos de TikTok",
+    "description": "Aprovecha al máximo tu experiencia en TikTok con estos útiles consejos y trucos.",
+    "tips": {
+      "engagingContent": "Creación de Contenido Atractivo",
+      "engagingContentDesc": "Aprende a crear contenido digno de volverse viral que capte la atención de la audiencia.",
+      "multipleFormats": "Uso de Múltiples Formatos",
+      "multipleFormatsDesc": "Experimenta con videos, presentaciones de diapositivas e historias para maximizar el engagement.",
+      "offlineViewing": "Visualización Offline",
+      "offlineViewingDesc": "Descarga tus videos favoritos de TikTok para verlos sin conexión y para inspiración."
+    }
+  },
+  "prosCons": {
+    "title": "Pros y Contras",
+    "description": "Una evaluación honesta de las ventajas y limitaciones de usar SnapTik.",
+    "pros": {
+      "speed": "Rapidez Relámpago",
+      "speedDesc": "Descarga videos en segundos con nuestro sistema de procesamiento optimizado.",
+      "quality": "Alta Calidad",
+      "qualityDesc": "Mantén la calidad original del video sin compresión ni pérdida de calidad.",
+      "noWatermark": "Sin Marca de Agua",
+      "noWatermarkDesc": "Obtén videos limpios sin el logotipo de TikTok o marcas de agua de nombre de usuario.",
+      "free": "Completamente Gratis",
+      "freeDesc": "Sin tarifas ocultas, suscripciones o funciones premium - todo es gratis."
+    },
+    "cons": {
+      "privateVideos": "No Videos Privados",
+      "privateVideosDesc": "No se pueden descargar videos privados o protegidos de TikTok debido a restricciones de privacidad.",
+      "connectivity": "Requiere Internet",
+      "connectivityDesc": "Necesita una conexión a Internet activa para procesar y descargar videos.",
+      "platformChanges": "Cambios en la Plataforma",
+      "platformChangesDesc": "Las actualizaciones de TikTok pueden afectar ocasionalmente la funcionalidad hasta que actualicemos nuestro sistema.",
+      "contentLimits": "Limitaciones de Contenido",
+      "contentLimitsDesc": "Algunos formatos de contenido especializados pueden no ser compatibles en casos raros."
+    }
+  },
+  "exploreTools": {
+    "title": "Explora Más Herramientas de Descarga de TikTok",
+    "description": "Descubre nuestra suite completa de herramientas especializadas de descarga de TikTok para todas tus necesidades.",
+    "tools": {
+      "douyin": {
+        "title": "Descargador de Douyin",
+        "description": "Descarga videos de Douyin, la versión china de TikTok, sin marcas de agua.",
+        "button": "Probar Descargador de Douyin"
+      },
+      "story": {
+        "title": "Descargador de Historias de TikTok",
+        "description": "Guarda las historias de TikTok antes de que desaparezcan después de 24 horas.",
+        "button": "Probar Descargador de Historias"
+      },
+      "slide": {
+        "title": "Descargador de Diapositivas de TikTok",
+        "description": "Descarga presentaciones de fotos de TikTok como imágenes individuales o videos compilados.",
+        "button": "Probar Descargador de Diapositivas"
+      }
+    }
+  },
   "footer": {
     "description": "La forma más rápida y fácil de descargar videos de TikTok sin marcas de agua.",
+    "douyinDescription": "La forma más rápida y fácil de descargar videos de Douyin sin marcas de agua.",
+    "about": {
+      "title": "Acerca de SnapTik",
+      "whyBest": "Por Qué Somos los Mejores",
+      "safety": "Seguridad & Protección",
+      "tips": "Consejos de TikTok",
+      "prosCons": "Pros & Contras"
+    },
     "links": {
       "home": "Inicio",
       "about": "Acerca de",
